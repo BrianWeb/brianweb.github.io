@@ -5,8 +5,8 @@
 }
 
 .navbar {
-    margin-left: -18px;
-    margin-right: -18px;
+    margin-left: -16px;
+    margin-right: -14px;
     margin-top: -1px;
     font-family: 'Century Gothic', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5em;
@@ -124,7 +124,7 @@ th, td {
     font-size: 1.2em;
     height: 50px;
     line-height: 50px;
-    width: 224px;
+    width: 222px;
     background-color: rgb(255, 106, 0);
     text-decoration: none;
 }
