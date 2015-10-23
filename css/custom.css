@@ -1,48 +1,74 @@
-﻿body {
+﻿/* ----- HTML ELEMENTS -------*/
+
+html {
+    border-radius: 0;
+    text-decoration: none;
+}
+
+body {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -o-border-radius: 0px;
     border-radius: 0px;
-    background-color: #F2F2F3;
+    border: 0px;
     margin: auto;
+    color: #363636;
+    text-rendering: optimizeLegibility;
 }
 
-.navbar {
-    margin-left: -16px;
-    margin-right: -14px;
-    margin-top: -1px;
-    font-family: 'Century Gothic', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5em;
-    border-bottom: solid 1px #6685A3;
-    background-color: #F8F8F8;
+a, a:hover, a:active, a:visited {
+    text-decoration: none !important; /* !important was used to override BS CSS. Not good practise but text-decoration will never be needed*/
+    background-color: transparent;
+    color: #3b5998;
 }
 
-    .navbar .bweb {
-        /*color:#000099;*/
-        font-size: 1.7em;
-        color: #6685A3;
+    a:hover {
+        color: #0066FF;
     }
 
-        .navbar .bweb > li > a:hover {
-            color: rgb(255, 106, 0);
-        }
+    a:active {
+        color: #193EAC;
+    }
 
-.navbar-brand {
-    margin-left: 5px;
+ul {
+    list-style-type: square;
 }
 
-#dotcom {
-    color: #6685A3;
+h1 {
+     font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+    font-size: 2.2em;
+    color: #3b5998;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
-    color: rgb(255, 106, 0);
+h2 {
+     font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    color: #E62E00;
+    margin:0px;
+
 }
 
+    h2 a, h2 a:visited {
+        color: #4D4D4D;
+        text-decoration: none;
+    }
 
-.glyphicon {
+h3 {
+     font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+    font-size: 1.8em;
+    color: #E62E00;
 }
 
+h4 {
+     font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+    font-size: 1.4em;
+    color: #E62E00;
+    padding-bottom: 5px;
+}
 
-#allContentUnderNavBar {
-    margin-top: 10px;
+h5 {
+    font-family: 'Roboto Condensed', 'Core Sans N 25', 'Franklin Gothic', 'Segoe UI',Frutiger,Tahoma,Helvetica,Sans-Serif;
+    color: #E62E00;
 }
 
 img {
@@ -51,110 +77,745 @@ img {
     height: auto;
 }
 
-h1 {
-    color: rgb(255, 106, 0);
-    margin-top: 2px;
-    margin-bottom: 6px;
-}
-
-h2, h3, h4 {
-    margin-top: 0px;
-    color: rgb(255, 106, 0);
-}
-
-h3 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-h4, h5 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.glyphicon {
-    color: rgb(255, 106, 0);
-    font-size: 1.3em;
-}
-
-aside {
-    font-size: .8em;
-    padding-left: 5%;
+figure {
+    padding: 5px;
 }
 
 figcaption {
-    padding-top: 2px;
-    font-size: .9em;
     font-style: italic;
-    color: #404245;
+}
+/* ----- /HTML ELEMENTS* --------/
+
+
+/* -------CUSTOM CLASSES -------*/
+.bold {
+    font-weight: bold;
 }
 
-.openingParagraph {
-    font-size: 1.1em;
+.alignRight {
+    float: right;
 }
 
-table {
-    width: 200px;
-    color: #2A3A4A;
-    font-size: 1.1em;
+.row .keyDescription {
 }
 
-table, th, td {
-    border: 1px solid rgb(255, 106, 0);
+.list {
+    padding-left: 15px;
 }
 
-th, td {
-    padding: 8px;
-    background-color: #F8F8F8;
+.customRow {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
-    td span {
-        padding: 3px;
-    }
+.container-fluid {
+    /*padding: 0px; Override BS of padding left & right of 15pt*/
+}
 
-.contactType {
+.thumbnail {
+    border-radius: 0px;
+}
+/* -------/CUSTOM CLASSES -------*/
+
+
+/* -------------------   NAVBAR  ------------------- */
+
+#topDivRow {
+    border-bottom: 1px solid #D9E0E8;
+    background-color: white;
+    width: 100%;
+}
+
+#logoColumn {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#logo {
+    padding-left: 15px;
     background-color: #6685A3;
+    width: 156px;
+}
+
+#companyName {
+    font-family: 'Century Gothic', 'Muli','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5em;
     color: white;
 }
 
-.buttonDownload {
-    color: white;
-    display: block;
-    text-align: center;
+#dotcom {
+    color: white; /*nice grey #717171 */
+    font-size: 1.7em;
+    padding-right: 10px;
+}
+
+#logoCaption {
     font-size: 1.2em;
-    height: 50px;
-    line-height: 50px;
-    width: 224px;
-    background-color: rgb(255, 106, 0);
-    text-decoration: none;
+    color: #CC0000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-    .buttonDownload:focus, .buttonDownload:hover {
-        text-decoration: none;
-        color: white;
+#logo a {
+    color: #F5F7FD;
+    padding: 12px;
+}
+
+
+div.container4 #pageHeadingColumn { /*DOESN'T WORK!!!!*/
+    border-bottom: 1px solid #6685A3;
+}
+
+div.container4 #pageHeadingText { /*Just vertical centering*/
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: #6685A3;
+    font-size: 2.5em;
+    font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+}
+
+/* -------------------   CONTACT FIELDS ------------------- */
+
+div.container4 {
+    height: 50px;
+    position: relative;
+    padding: 0px; /*override BS Padding left & right of 15px*/
+}
+
+.navBox {
+    background-color: #E62E00;
+}
+
+div.container4 .contactDetails {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.contactDetails a {
+    color: white;
+}
+
+.navBox:hover {
+    transition: .3s background-color;
+    background-color: #6685A3;
+}
+/*Below doesn't seem to work
+.contactDetails a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}*/
+
+.icon_sosa {
+    /*color: #337ab7; Default bootstrap link colour*/
+    color: white;
+    padding-right: 5px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2.3em;
+}
+
+
+
+#navBox2 {
+    border-left: 1px solid white;
+}
+
+
+.dummySpan {
+    color: #F2F2F3;
+}
+/* -------------------   /CONTACT FIELDS ------------------- */
+
+
+
+
+/* -------------------   /NAVBAR  ------------------- */
+
+
+
+#allContentUnderNavBar {
+    background-color: #E8ECF1;
+    padding-top: 30px;
+}
+
+/* -------------------   THUMBNAIL SECTION ------------------- */
+.websitePreview .thumbnail {
+    background-color: #DEE0E3;
+    border: 1px solid #C2CEDA;
+}
+
+    .websitePreview .thumbnail:hover {
         background-color: #6685A3;
+        transition: background-color 1s;
     }
 
 
-
-html {
-    border-radius: 0;
+.websiteExample {
+    border: 2px solid rgb(255, 106, 0);
 }
+
+.caption {
+    background-color: #E1E4EA;
+    border-top: 2px solid #C2CEDA;
+}
+
+.thumbnailCaptionHeading {
+    color: #E62E00;
+    font-size: 1.7em;
+    padding-bottom: 5px;
+}
+
+    .thumbnailCaptionHeading:hover, .thumbnailCaptionHeading:hover:active {
+        color: #CF2900;
+    }
+
+/* -------------------  /THUMBNAIL SECTION ------------------- */
+
+/* -------------------  /Website Detailed Explaination Section ------------------- */
+#leftColumn{
+
+
+}
+
+/* -------------------   WELCOME AND IMAGE BOX------------------- */
+#welcomeAndImageBox {
+}
+
+#welcome {
+    padding-bottom: 15px;
+    padding-left: 5px;
+}
+
+.welcome {
+    margin-bottom: 5px;
+}
+
+.item {
+    width: 100%;
+}
+
+#welcomeHeading {
+    color: #22356b;
+    font-family: 'Century Gothic', Helvetica, sans-serif, Calibri, 'Franklin Gothic', 'Segoe UI',Frutiger,Tahoma,Helvetica,Sans-Serif;
+    font-size: 1.5em;
+    line-height: 5px;
+}
+
+#photoDescription {
+    color: white;
+    margin-top: -22px;
+    padding-left: 5px;
+}
+
+
+
+
+.carousel-caption {
+    bottom: 0px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+    background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+    margin-left: 60%;
+    width: 40%;
+    left: 0%;
+    right: 0%;
+    padding: 10px;
+    text-align: left;
+    font-family: 'Century Gothic', 'Muli','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.imageWithCenteredText {
+    /*Vertical Bit*/
+    position: relative;
+}
+
+.carousel-caption-centerText .textOnImage {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+    background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+    font-family: 'Century Gothic', 'Muli','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    color: white;
+    padding: 8px;
+    width: 40%;
+    text-align: center;
+    /*Vertical Bit*/
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    /*Horizontal Bit*/
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-52%, -50%);
+}
+
+
+.darkImageOverlayT {
+    /*   background: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/shoes.jpg); /* For Safari 5.1 to 6.0 */
+    /*  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/shoes.jpg);/* For Opera 11.1 to 12.0 */
+    /*  background: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/shoes.jpg); /* For Firefox 3.6 to 15 */
+    /*  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/shoes.jpg); /* Standard syntax */
+    background-color: black;
+}
+
+.imageLayerOne {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+    .imageLayerOne img {
+        display: block;
+    }
+
+    .imageLayerOne .img-wrap {
+        background-color: black;
+    }
+
+    .imageLayerOne img {
+        opacity: 0.4;
+    }
+
+@media only screen and (min-width: 961px) {
+    body {
+        -webkit-zoom: 130%;
+    }
+}
+
+@media only screen and (max-width: 320px) { /* Hide photo captions on extra small screens*/
+    .carousel-caption {
+        display: none;
+    }
+}
+/*The below code creates an intrinic div, with centered content
+#showGallerySlide {
+    position: relative;
+    padding-bottom: 60%;
+    height: 0;
+    background: #E9EAEA;
+}
+
+#showGallerySlideInner {
+    position: absolute;
+    top: 35%; /*For the text and icon to go in the vetical center
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#showGallerySlideInnerContent {
+    position: relative;
+    height: 0;
+    color: #CC0000;
+    text-align: center;
+}
+CHECK IF I SHOULD I USE BELOW?
+#showGallerySlideInner {
+    position: absolute;
+    transform: translateY(-60%);
+    padding: 15px;
+    color: #22356b;
+}*/
+
+/* ------------------- /END OF WELCOME AND IMAGE BOX------------------- */
+
+
+
+
+
+/* -------------------   SERVICES ------------------- */
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    #welcomeAndServices {
+        margin-top: -105px;
+    }
+}
+
+.services {
+    border-left: 1px solid #D9E0E8;
+    border-right: 1px solid #D9E0E8;
+    border-bottom: 1px solid #D9E0E8;
+    background-color: white;
+    margin-bottom: 10px;
+    /* background-color:#D9E0E8; similar to above, but darker */
+    padding: 15px;
+}
+
+.customCollaspeSection {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.servicesHeading {
+    font-family: 'Century Gothic', Helvetica, sans-serif, Calibri, 'Franklin Gothic', 'Segoe UI',Frutiger,Tahoma,Helvetica,Sans-Serif;
+    background-color: #CC0000;
+    padding: 2px;
+    font-size: 1.8em;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+#servicesSubHeading {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-family: Calibri, Helvetica, sans-serif, Calibri, 'Franklin Gothic', 'Segoe UI',Frutiger,Tahoma,Helvetica,Sans-Serif;
+    text-align: center;
+}
+
+.services .media-heading {
+    padding-top: 20px;
+}
+
+
+#generalServicesDescription {
+    color: #0066FF;
+}
+
+.media-left .services {
+    width: 60%;
+}
+
+.services .media {
+    border: 2px solid #D9E0E8;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.services .media-object {
+    /*light blue: background-color: #e3eff8; */
+    background-color: white;
+    width: 100px;
+    text-align: center;
+}
+
+.services .fa {
+    color: #CC0000;
+    line-height: 100px;
+}
+
+.services .media-body {
+    padding-bottom: 10px;
+}
+
+.media-paragraphs {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.quote {
+    font-style: italic;
+}
+
+aside {
+    padding-left: 15px;
+}
+
+.services .glyphicon {
+    top: 4px; /* override of bootstrap's default of 1px */
+    padding-left: 5px;
+    padding-right: 10px;
+    font-size: 1.2em;
+}
+
+.showHideTextAndArrow {
+    float: right;
+    color: #CC0000;
+}
+
+    .showHideTextAndArrow:hover {
+        color: #0066FF;
+    }
+
+    .showHideTextAndArrow:active {
+        color: #193EAC;
+    }
+
+    .showHideTextAndArrow:visited {
+        color: #CC0000;
+    }
+
+/* -------------------   /SERVICES ------------------- */
+
+/* -------------------   FACEBOOK ------------------- */
+#fb-root {
+    background-color: #E9EAEA;
+}
+
+#facebookHeading {
+    background-color: #E9EAEA;
+    padding-left: 5px;
+    border: 1px solid #D9E0E8;
+}
+
+#faceBookColumn {
+    margin-top: 10px;
+}
+/* -------------------   /FACEBOOK ------------------- */
+
+/* -------------------   SHARE LINKS ------------------- */
+#shareLinks {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    #shareLinks .media {
+        margin-bottom: 5px;
+    }
+
+@media only screen and (max-width: 767px) {
+    #shareLinks .media-body {
+        width: 60%;
+    }
+}
+
+
+#shareOnTwitter {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#shareOnGooglePlus {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.tweet {
+    color: #55acee;
+}
+
+.google_plus {
+    font-size: 1.9em;
+    color: white;
+    background-color: #dd4b39;
+    border-radius: 2px;
+    padding-top: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    margin-right: 5px;
+}
+
+/* -------------------   /SHARE LINKS ------------------- */
+
+footer {
+    border-top: 1px solid #D9E0E8;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+/* ############### GALLERY.HTML Page ############### */
+
+
+.wrap {
+    overflow: hidden;
+    margin: 10px;
+}
+
+    .wrap .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+.box {
+    float: left;
+    position: relative;
+    width: 20%;
+    padding-bottom: 20%;
+}
+
+
+
+.boxInner {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    overflow: hidden;
+}
+
+    .boxInner img {
+        width: 100%;
+    }
+/*
+@media only screen and (min-width : 481px) {
+    .boxInner .titleBox {
+        position: absolute;
+        bottom: 4px;
+        left: 4px;
+        right: 4px;
+        margin-bottom: -50px;
+        background: #000;
+        background: rgba(0, 0, 0, 0.5);
+        color: #FFF;
+        padding: 10px;
+        text-align: center;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }*/
+
+body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+    margin-bottom: 0;
+}
+
+}
+
+
+@media only screen and (max-width : 480px) and (min-width : 321px) {
+    /* Smartphone view: 1 tile */
+    .box {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+}
+
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+    /* Tablet view: 2 tiles */
+    .box {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+}
+
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+    /* Small desktop / ipad view: 3 tiles */
+    .box {
+        /* width: 33.3%;
+            padding-bottom: 33.3%;*/
+        width: 25%;
+        padding-bottom: 25%;
+    }
+}
+/*
+        @media only screen and (max-width : 1290px) and (min-width : 1051px) {
+          /* Medium desktop: 4 tiles
+          .box {
+            width: 25%;
+            padding-bottom: 25%;
+          }
+        }*/
+
 
 /*
-.navbar-default .navbar-brand {
-    color: #6685A3;
+.percentageBorder{
+    width:90%;
+    border-bottom: 1px solid #3b5998;
+    border-bottom-width:thin;
+}*/
+
+.projectTypeHeadingDiv {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #CC0000;
+    padding-left: 10px;
+    border-top: 1px solid #CC0000;
+    padding-top: 15px;
 }
 
-.navbar-default .navbar-nav > li > a {
-    color: #6685A3;
-}
-*/
+    .projectTypeHeadingDiv .fa-home {
+        padding-left: 15px; /*extra padding because the home icon's roof sticks out more than the apartment icon */
+    }
 
-body {
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -o-border-radius: 0px;
-    border-radius: 0px;
-    border: 0px;
+    .projectTypeHeadingDiv .media-object {
+        padding-right: 10px; /*extra padding because of bug with Android Browser */
+    }
+
+.projectTypeHeadingText {
+}
+
+#residentialSection {
+    margin-top: 15px;
+}
+
+.projectThumbnail {
+}
+
+.projectHeadingBoxInner {
+    background-color: white;
+    font-family: RobotoCondensed-Regular;
+    font-size: 1.6em;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.boxInnerText {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-60%);
+    padding: 15px;
+    color: #22356b;
+}
+
+@font-face {
+    font-family: 'Florsn01';
+    src: url('../fonts/Florsn01.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RobotoCondensed-Regular';
+    src: url('../fonts/RobotoCondensed-Regular.ttf') format('truetype');
+}
+
+
+.glyphicon-triangle-right {
+    font-size: 0.8em;
+}
+
+.thumbnail {
+    padding: 2px; /*BS Override (of 4px) */
+}
+
+#commercialSection {
+    border-top: 1px solid #CC0000;
+    padding-top: 10px;
+}
+
+
+
+
+@media only screen and (max-width : 320px) {
+    /* Smartphone view: 1 tile */
+    .box {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    .projectHeadingBox {
+        padding-bottom: 20%;
+    }
+
+
+    .boxInnerText {
+        position: absolute;
+        top: -20%;
+        transform: translateY(0%);
+        padding-bottom: 5px;
+    }
+
+    .glyphicon-triangle-right {
+        display: none;
+    }
 }

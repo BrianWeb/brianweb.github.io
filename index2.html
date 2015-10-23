@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BWeb.ie</title>
+    <link href="css/library/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <link href="fonts/icon_sosa/fontSosa.css" rel="stylesheet" />
+
+    <!--Angular-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+    <script type="text/javascript" src="js/controllers/app.js"></script>
+
+    <!--Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <div id="entirePage">
+        <!--not given container-fluid class so that the background colour won't have padding-->
+
+
+        <div id="topDivRow" class="row customRow">
+
+            <div class="col-xs-5 col-sm-5 col-md-2 col-lg-2" id="logoColumn">
+                <a href="#">
+                    <div id="logo">
+                        <span id="companyName">BWeb</span><span id="dotcom">.ie</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xs-7 col-sm-7 col-md-6 col-lg-6 container4" id="pageHeadingColumn">
+                <a href="#">
+                    <div id="pageHeadingText">Website Portfolio </div>
+                </a>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 container4 navBox">
+                <span class="contactDetails">
+                    <a href="downloads/brian.vcf"><span class="icon_sosa vcard"></span><span class="contactText">Contact vCard</span></a>
+                </span>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 container4 navBox" id="navBox2">
+                <span class="contactDetails">
+                    <a href="mailto:brian@bweb.ie"><span class="icon_sosa envelope"></span>brian@bweb.ie</a>
+                </span>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="allContentUnderNavBar">
+
+        <div class="container-fluid">
+
+            <p id="welcome">
+                Hello and thank you for visiting my online website portfolio, Brian. (Last updated: 2015/10/20)
+            </p>
+
+            <div ng-controller="PartialController">
+
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" id="leftColumn">
+                        <!--Left hand column-->
+
+                        <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-6 websitePreview">
+                            <a href="#websiteDetails" ng-click="showAlmax()">
+                                <div class="thumbnail">
+                                    <img src="images/almax-480wide.jpg" />
+                                    <div class="caption">
+                                        <div class="thumbnailCaptionHeading">Almax Painting</div>
+                                        caption goes here <br />
+                                        line 2 <br />
+                                        line 3 <br />
+                                        line 4
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 websitePreview">
+                            <a href="#websiteDetails" ng-click="showMetro()">
+                                <div class="thumbnail">
+                                    <img src="images/metroAuto-480wide.jpg" />
+                                    <div class="caption">
+                                        <div class="thumbnailCaptionHeading">Metro Auto</div>
+                                        Single page website for a car garage, showing custom-made web fonts.
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 websitePreview">
+                            <div class="thumbnail">
+                                <img src="images/srcset-480wide.jpg" />
+                                <div class="caption">
+                                    <div class="thumbnailCaptionHeading">Almax Painting</div>
+                                    line 2 <br />
+                                    line 3 <br />
+                                    line 4
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 websitePreview">
+                            <div class="thumbnail">
+                                <img src="images/airangular-480wide.jpg" />
+                                <div class="caption">
+                                    <div class="thumbnailCaptionHeading">Almax Painting</div>
+                                    caption goes here <br />
+                                    line 2 <br />
+                                    line 3 <br />
+                                    line 4
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!--/Col-->
+
+                    <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                        <!--Right hand column-->
+
+                        <div id="websiteDetails" ng-include="partialURL" onload="'partials/almax.html'"></div>
+
+                        <h5> <a href="http://rimages.azurewebsites.net" target="_blank">  Responsive Images Website </a> </h5>
+                        This website shows how an image can be dynamically changed, depending on its resolution to best suit the user agent (e.g. mobile device / monitor) width or the viewport width (e.g. the size of the browser window).<br />
+
+                        <h5> <a href="http://airangular.azurewebsites.net" target="_blank">  Flight info, made with Angular </a> </h5>
+                        A website showing airline flight information. It was designed with Angular, using modules, partials, routes and controllers, along with other features of Angular. <br />
+                    
+                    </div>
+
+                </div>
+            </div><!--/PartialController-->
+        </div><!--/container-fluid-->
+    </div><!--/entirePage-->
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+
+</html> 
