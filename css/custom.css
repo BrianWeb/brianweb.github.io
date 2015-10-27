@@ -37,14 +37,16 @@ ul {
 h1 {
      font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
     font-size: 2.2em;
-    color: #3b5998;
+        color: #E62E00;
+        margin:0px;
 }
 
 h2 {
      font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
     font-size: 2em;
-    color: #E62E00;
-    margin:0px;
+        color: #3b5998;
+    margin-top: 0px; /*Override of strange margin that gets added*/
+    margin-bottom:10px;
 
 }
 
@@ -57,13 +59,14 @@ h3 {
      font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
     font-size: 1.8em;
     color: #E62E00;
+        margin:0px;
 }
 
 h4 {
      font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
     font-size: 1.4em;
-    color: #E62E00;
-    padding-bottom: 5px;
+      color: #3b5998;
+              margin:0px;
 }
 
 h5 {
@@ -117,7 +120,20 @@ figcaption {
 .thumbnail {
     border-radius: 0px;
 }
-/* -------/CUSTOM CLASSES -------*/
+
+.floatRight{
+     float: right;
+}
+
+.inline{
+    display: inline;
+    margin-right: 10px;
+}
+
+.noWrap {
+    white-space: nowrap;
+}
+/* -------/CUSTOM CLASSES -------------------------*/
 
 
 /* -------------------   NAVBAR  ------------------- */
@@ -174,10 +190,10 @@ div.container4 #pageHeadingText { /*Just vertical centering*/
     transform: translate(0, -50%);
     color: #6685A3;
     font-size: 2.5em;
-    font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+    font-family: 'Century Gothic', 'Muli','Franklin Gothic Medium', 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
 }
 
-/* -------------------   CONTACT FIELDS ------------------- */
+        /* -------- CONTACT FIELDS -------- */
 
 div.container4 {
     height: 50px;
@@ -233,7 +249,7 @@ div.container4 .contactDetails {
 .dummySpan {
     color: #F2F2F3;
 }
-/* -------------------   /CONTACT FIELDS ------------------- */
+            /* -------- /CONTACT FIELDS ------ */
 
 
 
@@ -244,8 +260,22 @@ div.container4 .contactDetails {
 
 #allContentUnderNavBar {
     background-color: #E8ECF1;
-    padding-top: 30px;
+    padding-top: 15px;
 }
+
+/* -------------------   TEXT SECTION ------------------- */
+   .textSection{
+       background-color: white;
+    padding:10px;
+    margin-bottom:15px;
+
+
+   } 
+
+
+/* -------------------   /TEXT SECTION ------------------- */
+
+
 
 /* -------------------   THUMBNAIL SECTION ------------------- */
 .websitePreview .thumbnail {
@@ -258,10 +288,6 @@ div.container4 .contactDetails {
         transition: background-color 1s;
     }
 
-
-.websiteExample {
-    border: 2px solid rgb(255, 106, 0);
-}
 
 .caption {
     background-color: #E1E4EA;
@@ -280,7 +306,14 @@ div.container4 .contactDetails {
 
 /* -------------------  /THUMBNAIL SECTION ------------------- */
 
-/* -------------------  /Website Detailed Explaination Section ------------------- */
+
+/* -------------------  /Website Detailed Explaination Section (Partials)------------------- */
+
+.websiteExampleImage {
+    border: 2px solid #C2CEDA;
+    margin-bottom:15px;
+}
+
 #leftColumn{
 
 
@@ -819,3 +852,5 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
         display: none;
     }
 }
+
+

@@ -1,18 +1,23 @@
 ﻿<!DOCTYPE html>
-<html ng-app>
+<html ng-app="MainModule">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>BWeb.ie</title>
-    <link href="css/library/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/library/bootstrap.min.css" rel="stylesheet" /><!--Custom Bootstrap-->
     <link href="css/custom.css" rel="stylesheet" />
     <link href="fonts/icon_sosa/fontSosa.css" rel="stylesheet" />
 
     <!--Angular-->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
-    <script type="text/javascript" src="js/controllers/app.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <script type="text/javascript" src="js/routes.js"></script>
+
 
     <!--Fonts-->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
@@ -53,17 +58,83 @@
             </div>
 
         </div>
-    </div>
 
-    <div id="allContentUnderNavBar">
 
-        <div class="container-fluid">
+        <div id="allContentUnderNavBar">
 
-            <p id="welcome">
-                Hello and thank you for visiting my online website portfolio, Brian. (Last updated: 2015/10/20)
-            </p>
+            <div class="container-fluid" ng-controller="ScrollController">
 
-            <div ng-controller="PartialController">
+                <p id="welcome">
+                    Hello, I'm Brian and I like to add to the wonders of the web, specialising in mobile friendly websites. Please check out some of my work (which I am always adding to) and don't hesistate to message me at brian@bweb.ie or tweet me <a href="https://twitter.com/intent/tweet?screen_name=BWebDotIE">@BWebDotIE</a>                             (Last updated: 2015/10/26)
+                </p>
+
+                <div class="textSection">
+
+                    <h1 class="inline">Design Philosphy</h1><span class="noWrap"> Mobile friendly websites characteristics include: </span>
+
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                            <p>
+                                <h4>User friendly Layouts</h4>
+                            </p>
+                            <p>
+                                Layouts are kept compact, with limited empty space to reduce scrolling / swiping.
+                            </p>
+                            <p>
+                                Page elements are clearly defined and easy to see.
+                            </p>
+                            <p>
+                                Minimalist, uncluttered design.
+                            </p>
+
+                            <p>
+                                <h4>Single Page Design</h4>
+                            </p>
+                            <p>
+
+                                Websites that can show new sections and information in a single web page (i.e. without the need extra new browser windows / tabs)   This helps the web page appear and behave more like a mobile app.
+                            </p>
+
+
+
+                        </div>
+
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                            <p>
+                                <h4>Responsive Layouts</h4>
+                            </p>
+                            <p>
+                                Multiple layouts to suit at least four different screen size ranges no matter what device the website is accessed from.
+                            </p>
+                            <p>
+                                <h4>Responsive Images</h4>
+                            </p>
+                            <p>
+                                To optimise load times, each image will have different size images. Which size image downloaded depends on the size of screens. Smaller size screens will
+                                download a smaller sized version, bigger screens – bigger versions, and medium size screens will be served a medium sized version of the same image.
+                            </p>
+                            <p>
+                                This is achieved using HTML’s <strong>Responsive Images ‘srcset’ and ‘sizes’ attributes.</strong>
+                            </p>
+
+                        </div>
+
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                            <p>
+                                <h4>Accessibility</h4>
+                            </p>
+                            <p>
+                                All web pages follow the W3C’s “Web Content Accessibility Guidelines 1.0" (    <a href="http://www.w3.org/TR/WCAG10-HTML-TECHS/">http://www.w3.org/TR/WCAG10-HTML-TECHS/</a>) . This creates a more enjoyable web experience for anyone
+                                with accessibility issues. For example the content is made accessible to a user’s screen reader to help those who may have a sight impairment.
+                            </p>
+
+
+                        </div>
+                        <!-- <div ng-controller="PartialController">-->
+                    </div>
+                </div>
+
+
 
                 <div class="row">
 
@@ -71,7 +142,7 @@
                         <!--Left hand column-->
 
                         <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-6 websitePreview">
-                            <a href="#websiteDetails" ng-click="showAlmax()">
+                            <a href="#almax" ng-click="goToAnchor()">
                                 <div class="thumbnail">
                                     <img src="images/almax-480wide.jpg" />
                                     <div class="caption">
@@ -86,7 +157,7 @@
                         </div>
 
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 websitePreview">
-                            <a href="#websiteDetails" ng-click="showMetro()">
+                            <a href="#metro" ng-click="goToAnchor()">
                                 <div class="thumbnail">
                                     <img src="images/metroAuto-480wide.jpg" />
                                     <div class="caption">
@@ -98,48 +169,49 @@
                         </div>
 
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 websitePreview">
-                            <div class="thumbnail">
-                                <img src="images/srcset-480wide.jpg" />
-                                <div class="caption">
-                                    <div class="thumbnailCaptionHeading">Almax Painting</div>
-                                    line 2 <br />
-                                    line 3 <br />
-                                    line 4
+                            <a href="#rimages" ng-click="goToAnchor()">
+                                <div class="thumbnail">
+                                    <img src="images/srcset-480wide.jpg" />
+                                    <div class="caption">
+                                        <div class="thumbnailCaptionHeading">Responsive Images</div>
+                                        line 2 <br />
+                                        line 3 <br />
+                                        line 4
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 websitePreview">
-                            <div class="thumbnail">
-                                <img src="images/airangular-480wide.jpg" />
-                                <div class="caption">
-                                    <div class="thumbnailCaptionHeading">Almax Painting</div>
-                                    caption goes here <br />
-                                    line 2 <br />
-                                    line 3 <br />
-                                    line 4
+                            <a href="#angulair" ng-click="goToAnchor()">
+                                <div class="thumbnail">
+                                    <img src="images/angulair-480wide.jpg" />
+                                    <div class="caption">
+                                        <div class="thumbnailCaptionHeading">Angular Example</div>
+                                        caption goes here <br />
+                                        line 2 <br />
+                                        line 3 <br />
+                                        line 4
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                     </div><!--/Col-->
 
                     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-                        <!--Right hand column-->
+                        <!--Right hand column -->
+                        <!-- <div id="websiteDetails" ng-include="partialURL" onload="'partials/almax.html'"></div>-->
+                        NG VIEW goes under this text!!!
+                        <div id="partialsAnchor"></div>
+                     <div ng-view></div>
 
-                        <div id="websiteDetails" ng-include="partialURL" onload="'partials/almax.html'"></div>
-
-                        <h5> <a href="http://rimages.azurewebsites.net" target="_blank">  Responsive Images Website </a> </h5>
-                        This website shows how an image can be dynamically changed, depending on its resolution to best suit the user agent (e.g. mobile device / monitor) width or the viewport width (e.g. the size of the browser window).<br />
-
-                        <h5> <a href="http://airangular.azurewebsites.net" target="_blank">  Flight info, made with Angular </a> </h5>
-                        A website showing airline flight information. It was designed with Angular, using modules, partials, routes and controllers, along with other features of Angular. <br />
-                    
                     </div>
 
                 </div>
-            </div><!--/PartialController-->
-        </div><!--/container-fluid-->
+
+            </div><!--/container-fluid-->
+        </div><!--/allContentUnderNavBar-->
     </div><!--/entirePage-->
 
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>

@@ -1,6 +1,4 @@
-
-
-function PartialController($scope) {
+﻿function PartialController($scope) {
 
     $scope.showAlmax = function () {
         $scope.partialURL = 'partials/almax.html';
