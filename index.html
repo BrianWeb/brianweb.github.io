@@ -141,70 +141,73 @@
                     <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" id="leftColumn">
                         <!--Left hand column-->
 
-                        <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-6 websitePreview">
-                            <a href="#almax" ng-click="goToAnchor()">
-                                <div class="thumbnail">
-                                    <img src="images/almax-480wide.jpg" />
-                                    <div class="caption">
-                                        <div class="thumbnailCaptionHeading">Almax Painting</div>
-                                        caption goes here <br />
-                                        line 2 <br />
-                                        line 3 <br />
-                                        line 4
-                                    </div>
-                                </div>
-                            </a>
+                        <div id="projectsTitle"class="row customRow">
+                            <h1>Projects</h1>
                         </div>
 
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 websitePreview">
-                            <a href="#metro" ng-click="goToAnchor()">
-                                <div class="thumbnail">
-                                    <img src="images/metroAuto-480wide.jpg" />
-                                    <div class="caption">
-                                        <div class="thumbnailCaptionHeading">Metro Auto</div>
-                                        Single page website for a car garage, showing custom-made web fonts.
+                            <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-6 websitePreview">
+                                <a href="#almax#partialsAnchor" ng-click="goToAnchor()">
+                                    <div class="thumbnail">
+                                        <img src="images/almax-480wide.jpg" />
+                                        <div class="caption">
+                                            <div class="thumbnailCaptionHeading">Almax Painting</div>
+                                            caption goes here <br />
+                                            line 2 <br />
+                                            line 3 <br />
+                                            line 4
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
+                                </a>
+                            </div>
 
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 websitePreview">
-                            <a href="#rimages" ng-click="goToAnchor()">
-                                <div class="thumbnail">
-                                    <img src="images/srcset-480wide.jpg" />
-                                    <div class="caption">
-                                        <div class="thumbnailCaptionHeading">Responsive Images</div>
-                                        line 2 <br />
-                                        line 3 <br />
-                                        line 4
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 websitePreview">
+                                <a href="#metro#partialsAnchor" ng-click="goToAnchor()">
+                                    <div class="thumbnail">
+                                        <img src="images/metroAuto-480wide.jpg" />
+                                        <div class="caption">
+                                            <div class="thumbnailCaptionHeading">Metro Auto</div>
+                                            Single page website for a car garage, showing custom-made web fonts.
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
+                                </a>
+                            </div>
 
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 websitePreview">
-                            <a href="#angulair" ng-click="goToAnchor()">
-                                <div class="thumbnail">
-                                    <img src="images/angulair-480wide.jpg" />
-                                    <div class="caption">
-                                        <div class="thumbnailCaptionHeading">Angular Example</div>
-                                        caption goes here <br />
-                                        line 2 <br />
-                                        line 3 <br />
-                                        line 4
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 websitePreview">
+                                <a href="#rimages#partialsAnchor" ng-click="goToAnchor()">
+                                    <div class="thumbnail">
+                                        <img src="images/srcset-480wide.jpg" />
+                                        <div class="caption">
+                                            <div class="thumbnailCaptionHeading">Responsive Images</div>
+                                            line 2 <br />
+                                            line 3 <br />
+                                            line 4
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
+                                </a>
+                            </div>
 
-                    </div><!--/Col-->
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 websitePreview">
+                                <a href="#angulair#partialsAnchor" ng-click="goToAnchor()">
+                                    <div class="thumbnail">
+                                        <img src="images/angulair-480wide.jpg" />
+                                        <div class="caption">
+                                            <div class="thumbnailCaptionHeading">Angular Example</div>
+                                            caption goes here <br />
+                                            line 2 <br />
+                                            line 3 <br />
+                                            line 4
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div><!--/Col-->
 
                     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
                         <!--Right hand column -->
                         <!-- <div id="websiteDetails" ng-include="partialURL" onload="'partials/almax.html'"></div>-->
-                        NG VIEW goes under this text!!!
-                        <div id="partialsAnchor"></div>
-                     <div ng-view></div>
+
+                        <div id="partialsAnchor" ng-view></div>
 
                     </div>
 

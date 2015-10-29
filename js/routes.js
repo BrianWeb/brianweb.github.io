@@ -1,5 +1,6 @@
 ﻿angular.module('router', ['ngRoute'])
-.config(function ($routeProvider) { //Angular dependancy injection 
+.config(function ($routeProvider)
+{ //Angular dependancy injection 
     $routeProvider
         .when('/almax', { templateUrl: 'partials/almax.html' })
         .when('/metro', { templateUrl: 'partials/metro.html' })
@@ -9,6 +10,8 @@
         .when('/test', { template: '<h3>Test Page</h3>' })
 
     .otherwise({ templateUrl: 'partials/almax.html' });
+    reloadOnSearch: false;
+
 });
 
 //The below code is 
