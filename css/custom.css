@@ -115,7 +115,11 @@ figcaption {
 }
 
 .container-fluid {
-    /*padding: 0px; Override BS of padding left & right of 15pt*/
+    padding: 0px; /*Override BS of padding left & right of 15pt*/
+}
+
+.row{
+    margin:0px;
 }
 
 .thumbnail {
@@ -128,11 +132,15 @@ figcaption {
 
 .inline{
     display: inline;
-    margin-right: 10px;
+
 }
 
 .noWrap {
     white-space: nowrap;
+}
+
+.noPadding{
+    padding:0px;
 }
 /* -------/CUSTOM CLASSES -------------------------*/
 
@@ -148,12 +156,14 @@ figcaption {
 #logoColumn {
     padding-left: 0px;
     padding-right: 0px;
+
 }
 
 #logo {
-    padding-left: 15px;
+    padding-left: 10px;
+        padding-right: 15px;
     background-color: #6685A3;
-    width: 156px;
+      display:inline-block;
 }
 
 #companyName {
@@ -165,14 +175,8 @@ figcaption {
 #dotcom {
     color: white; /*nice grey #717171 */
     font-size: 1.7em;
-    padding-right: 10px;
 }
 
-#logoCaption {
-    font-size: 1.2em;
-    color: #CC0000;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 #logo a {
     color: #F5F7FD;
@@ -180,18 +184,26 @@ figcaption {
 }
 
 
-div.container4 #pageHeadingColumn { /*DOESN'T WORK!!!!*/
-    border-bottom: 1px solid #6685A3;
-}
 
-div.container4 #pageHeadingText { /*Just vertical centering*/
+
+#pageHeadingText { /*Just vertical centering*/
     margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+    margin-left:10px;
     color: #6685A3;
     font-size: 2.5em;
     font-family: 'Century Gothic', 'Muli','Franklin Gothic Medium', 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (max-width: 480px) {
+
+        #pageHeadingText {
+          
+        }
+
+        .visibleSwitch{
+
+        }
+
 }
 
         /* -------- CONTACT FIELDS -------- */
@@ -874,4 +886,8 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 }
 #partialsAnchor{
     margin-top:30px;
+}
+
+#philosphyHeading{
+        margin-right: 10px;
 }
