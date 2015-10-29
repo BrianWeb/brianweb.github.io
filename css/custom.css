@@ -151,7 +151,9 @@ figcaption {
     background-color: white;
     width: 100%;
 }
-
+#BPnav{
+       text-align: center;
+}
 #logoColumn {
     padding-left: 0px;
     padding-right: 0px;
@@ -163,10 +165,11 @@ figcaption {
         padding-right: 15px;
     background-color: #6685A3;
       display:inline-block;
+         text-align: center;
 }
 
 #companyName {
-    font-family: 'Century Gothic', 'Muli','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Century Gothic', 'Muli','Franklin Gothic Medium', 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
     font-size: 2.5em;
     color: white;
 }
@@ -214,9 +217,12 @@ div.container4 {
 }
 
 .navBox {
+      font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+  
     background-color: #E62E00;
     padding-top:9px;
     padding-bottom:9px;
+    text-align: center;
 }
 
 div.container4 .contactDetails {
@@ -231,6 +237,12 @@ div.container4 .contactDetails {
 
 .contactDetails a {
     color: white;
+ 
+}
+
+.contactText{
+           font-weight:600;
+      font-size:1.2em;
 }
 
 .navBox:hover {
