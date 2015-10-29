@@ -148,7 +148,6 @@ figcaption {
 /* -------------------   NAVBAR  ------------------- */
 
 #topDivRow {
-    border-bottom: 1px solid #D9E0E8;
     background-color: white;
     width: 100%;
 }
@@ -216,6 +215,8 @@ div.container4 {
 
 .navBox {
     background-color: #E62E00;
+    padding-top:9px;
+    padding-bottom:9px;
 }
 
 div.container4 .contactDetails {
