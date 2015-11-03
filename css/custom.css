@@ -154,11 +154,6 @@ figcaption {
 #BPnav{
        text-align: center;
 }
-#logoColumn {
-    padding-left: 0px;
-    padding-right: 0px;
-
-}
 
 #logo {
     padding-left: 10px;
@@ -166,6 +161,7 @@ figcaption {
     background-color: #6685A3;
       display:inline-block;
          text-align: center;
+
 }
 
 #companyName {
@@ -203,7 +199,7 @@ figcaption {
         }
 
         .visibleSwitch{
-
+                visibility: hidden;
         }
 
 }
