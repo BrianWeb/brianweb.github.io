@@ -4,9 +4,6 @@
     $routeProvider
         .when('/almax', { templateUrl: 'partials/almax.html' })
         .when('/metro', { templateUrl: 'partials/metro.html' })
-         .when('/rimages', { templateUrl: 'partials/rimages.html' })
-         .when('/angulair', { templateUrl: 'partials/angulair.html' })
-
         .when('/test', { template: '<h3>Test Page</h3>' })
 
     .otherwise({ templateUrl: 'partials/almax.html' });
