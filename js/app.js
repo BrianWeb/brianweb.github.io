@@ -1,5 +1,6 @@
 ﻿
 (function (angular) {
+    'use strict';
     /* See: https://github.com/johnpapa/angular-styleguide:
 
         "Wrap Angular components in an Immediately Invoked Function Expression (IIFE).
@@ -10,9 +11,6 @@
 
 angular.module("MainModule", ['router', 'anchorScrollExample'])
 
-
-
-    'use strict';
     angular.module('anchorScrollExample', [])
       .controller('ScrollController', ['$scope', '$location', '$anchorScroll',
         function ($scope, $location, $anchorScroll) {

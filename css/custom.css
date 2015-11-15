@@ -35,21 +35,24 @@ ul {
 }
 
 h1 {
-     font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
     font-size: 2.2em;
-        color: #E62E00;
-        margin-top:0px;/*Override of strange margin that gets added*/
-            margin-bottom:10px;
+    color: #E62E00;
+    margin-top: 0px; /*Override of strange margin that gets added*/
+    margin-bottom: 10px;
 }
 
 h2 {
-     font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
     font-size: 2em;
-        color: #3b5998;
+    color: #3b5998;
     margin-top: 0px; /*Override of strange margin that gets added*/
-    margin-bottom:10px;
-
+    margin-bottom: 10px;
 }
+
+    h2:hover, h2:hover:active {
+        color: #337ab7;
+    }
 
     h2 a, h2 a:visited {
         color: #4D4D4D;
@@ -57,23 +60,35 @@ h2 {
     }
 
 h3 {
-     font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
     font-size: 1.8em;
-      color: #3b5998;
-        margin:0px;
+    color: #3b5998;
+    margin: 0px;
 }
 
+    h3:hover, h3:hover:active {
+        color: #337ab7;
+    }
+
+    h3 a, h3 a:visited {
+        color: #4D4D4D;
+        text-decoration: none;
+    }
+
 h4 {
-     font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
     font-size: 1.4em;
-      color: #E62E00;
-              margin:0px;
+    color: #E62E00;
+    margin: 0px;
 }
 
 h5 {
     font-family: 'Roboto Condensed', 'Core Sans N 25', 'Franklin Gothic', 'Segoe UI',Frutiger,Tahoma,Helvetica,Sans-Serif;
     color: #E62E00;
 }
+
+
+
 
 img {
     max-width: 100%;
@@ -118,29 +133,28 @@ figcaption {
     padding: 0px; /*Override BS of padding left & right of 15pt*/
 }
 
-.row{
-    margin:0px;
+.row {
+    margin: 0px;
 }
 
 .thumbnail {
     border-radius: 0px;
 }
 
-.floatRight{
-     float: right;
+.floatRight {
+    float: right;
 }
 
-.inline{
+.inline {
     display: inline;
-
 }
 
 .noWrap {
     white-space: nowrap;
 }
 
-.noPadding{
-    padding:0px;
+.noPadding {
+    padding: 0px;
 }
 /* -------/CUSTOM CLASSES -------------------------*/
 
@@ -151,21 +165,20 @@ figcaption {
     background-color: white;
     width: 100%;
 }
-#customNav{
 
+#customNav {
 }
 
-.centerText{
-           text-align: center;
+.centerText {
+    text-align: center;
 }
 
 #logo {
     padding-left: 10px;
-        padding-right: 15px;
+    padding-right: 15px;
     background-color: #6685A3;
-      display:inline-block;
-         text-align: center;
-
+    display: inline-block;
+    text-align: center;
 }
 
 #companyName {
@@ -190,7 +203,7 @@ figcaption {
 
 #pageHeadingText { /*Just vertical centering*/
     margin: 0;
-    margin-left:10px;
+    margin-left: 10px;
     color: #6685A3;
     font-size: 2.5em;
     font-family: 'Century Gothic', 'Muli','Franklin Gothic Medium', 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
@@ -198,18 +211,16 @@ figcaption {
 
 @media only screen and (max-width:1200px) {
 
-        #pageHeadingText {
-          text-align:center; /*Not working */
-                    
-        }
+    #pageHeadingText {
+        text-align: center; /*Not working */
+    }
 
-        .visibleSwitch{
-                visibility: hidden;
-        }
-
+    .visibleSwitch {
+        visibility: hidden;
+    }
 }
 
-        /* -------- CONTACT FIELDS -------- */
+/* -------- CONTACT FIELDS -------- */
 
 div.container4 {
     height: 50px;
@@ -218,11 +229,10 @@ div.container4 {
 }
 
 .contactBox {
-      font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
-  
+    font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
     background-color: #E62E00;
-    padding-top:9px;
-    padding-bottom:9px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     text-align: center;
 }
 
@@ -238,12 +248,11 @@ div.container4 .contactDetails {
 
 .contactDetails a {
     color: white;
- 
 }
 
-.contactText{
-           font-weight:600;
-      font-size:1.1em;
+.contactText {
+    font-weight: 600;
+    font-size: 1.1em;
 }
 
 .contactBox:hover {
@@ -276,7 +285,7 @@ div.container4 .contactDetails {
 .dummySpan {
     color: #F2F2F3;
 }
-            /* -------- /CONTACT FIELDS ------ */
+/* -------- /CONTACT FIELDS ------ */
 
 
 
@@ -291,13 +300,11 @@ div.container4 .contactDetails {
 }
 
 /* -------------------   TEXT SECTION ------------------- */
-   .textSection{
-       background-color: white;
-    padding:10px;
-    margin-bottom:15px;
-
-
-   } 
+.textSection {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+}
 
 
 /* -------------------   /TEXT SECTION ------------------- */
@@ -322,13 +329,13 @@ div.container4 .contactDetails {
 }
 
 .thumbnailCaptionHeading {
-    color: #E62E00;
-    font-size: 1.7em;
+    color: #3b5998;
+    font-size: 1.5em;
     padding-bottom: 5px;
 }
 
     .thumbnailCaptionHeading:hover, .thumbnailCaptionHeading:hover:active {
-        color: #CF2900;
+        color: #337ab7;
     }
 
 /* -------------------  /THUMBNAIL SECTION ------------------- */
@@ -338,12 +345,10 @@ div.container4 .contactDetails {
 
 .websiteExampleImage {
     border: 2px solid #C2CEDA;
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
-#leftColumn{
-
-
+#leftColumn {
 }
 
 /* -------------------   WELCOME AND IMAGE BOX------------------- */
@@ -353,7 +358,7 @@ div.container4 .contactDetails {
 #welcome {
     padding-bottom: 15px;
     padding-left: 10px;
-        padding-right: 10px;
+    padding-right: 10px;
 }
 
 .welcome {
@@ -596,20 +601,32 @@ aside {
 
 .showHideTextAndArrow {
     float: right;
-    color: #CC0000;
+    margin-right:10px;
+    color: #E62E00;
+       
 }
 
     .showHideTextAndArrow:hover {
-        color: #0066FF;
+        color: red;
     }
 
     .showHideTextAndArrow:active {
-        color: #193EAC;
+        color: red;
     }
 
     .showHideTextAndArrow:visited {
-        color: #CC0000;
+    color: #E62E00;
     }
+.moreLessLink{
+     font-size: 1.1em;
+
+}
+
+#commercialMoreLessTriangle{
+         font-size: 2.2em;
+}
+
+
 
 /* -------------------   /SERVICES ------------------- */
 
@@ -883,34 +900,35 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 
 
 #scrollArea {
-  height: 600px;
+    height: 600px;
 }
 
-#underBottom{
-  padding-top:800px;
-  padding-bottom: 800px;
+#underBottom {
+    padding-top: 800px;
+    padding-bottom: 800px;
 }
 
 #bottom {
-  display: block;
-  margin-top: 2000px;
+    display: block;
+    margin-top: 2000px;
 }
 
-#projectsTitle{
-    margin-left:10px;
-}
-#partialsAnchor{
-
+#projectsTitle {
+    margin-left: 10px;
 }
 
-#philosphyHeading{
-        margin-right: 10px;
+#partialsAnchor {
 }
 
-#websitePreviews{
-    margin-top:50px;
+#philosphyHeading {
+    margin-right: 10px;
 }
-.websiteExampleDescription{
-        margin-top:10px;
-    margin-bottom:15px;
+
+#websitePreviews {
+    margin-top: 50px;
+}
+
+.websiteExampleDescription {
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
