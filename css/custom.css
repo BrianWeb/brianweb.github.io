@@ -66,7 +66,7 @@ h3 {
 h4 {
      font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
     font-size: 1.4em;
-      color: #3b5998;
+      color: #E62E00;
               margin:0px;
 }
 
@@ -151,8 +151,12 @@ figcaption {
     background-color: white;
     width: 100%;
 }
-#BPnav{
-       text-align: center;
+#customNav{
+
+}
+
+.centerText{
+           text-align: center;
 }
 
 #logo {
@@ -192,10 +196,11 @@ figcaption {
     font-family: 'Century Gothic', 'Muli','Franklin Gothic Medium', 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width:1200px) {
 
         #pageHeadingText {
-          
+          text-align:center; /*Not working */
+                    
         }
 
         .visibleSwitch{
@@ -212,7 +217,7 @@ div.container4 {
     padding: 0px; /*override BS Padding left & right of 15px*/
 }
 
-.navBox {
+.contactBox {
       font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
   
     background-color: #E62E00;
@@ -241,9 +246,9 @@ div.container4 .contactDetails {
       font-size:1.1em;
 }
 
-.navBox:hover {
+.contactBox:hover {
     transition: .3s background-color;
-    background-color: #6685A3;
+    background-color: red;
 }
 /*Below doesn't seem to work
 .contactDetails a.active {
@@ -263,7 +268,7 @@ div.container4 .contactDetails {
 
 
 
-#navBox2 {
+#contactBox2 {
     border-left: 1px solid white;
 }
 
@@ -289,7 +294,7 @@ div.container4 .contactDetails {
    .textSection{
        background-color: white;
     padding:10px;
-    margin-bottom:25px;
+    margin-bottom:15px;
 
 
    } 
@@ -347,7 +352,8 @@ div.container4 .contactDetails {
 
 #welcome {
     padding-bottom: 15px;
-    padding-left: 5px;
+    padding-left: 10px;
+        padding-right: 10px;
 }
 
 .welcome {
@@ -894,9 +900,14 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     margin-left:10px;
 }
 #partialsAnchor{
-    margin-top:30px;
+    margin-top:45px;
 }
 
 #philosphyHeading{
         margin-right: 10px;
+}
+
+.websiteExampleDescription{
+        margin-top:10px;
+    margin-bottom:15px;
 }

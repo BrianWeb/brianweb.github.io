@@ -13,9 +13,6 @@
 
 //The below code is 
 
-
-
-
 (function (angular) {
     'use strict';
     angular.module('anchorScrollExample', [])
