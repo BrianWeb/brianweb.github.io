@@ -40,6 +40,7 @@ h1 {
     color: #E62E00;
     margin-top: 0px; /*Override of strange margin that gets added*/
     margin-bottom: 10px;
+    padding-right:5px;
 }
 
 h2 {
@@ -301,9 +302,21 @@ div.container4 .contactDetails {
 
 /* -------------------   TEXT SECTION ------------------- */
 .textSection {
-    background-color: white;
-    padding: 10px;
-    margin-bottom: 15px;
+  background-color:#F0F2F5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    border-top: 1px solid #C2CEDA;
+
+}
+
+
+@media only screen and (min-width: 961px) {
+    .textSection {
+            margin-left: 10px;
+              margin-right: 10px;
+    }
 }
 
 
@@ -312,7 +325,7 @@ div.container4 .contactDetails {
 
 
 /* -------------------   THUMBNAIL SECTION ------------------- */
-.websitePreview .thumbnail {
+.thumnailSection .thumbnail {
     background-color: #DEE0E3;
     border: 1px solid #C2CEDA;
 }
@@ -355,102 +368,8 @@ div.container4 .contactDetails {
 #welcomeAndImageBox {
 }
 
-#welcome {
-    padding-bottom: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.welcome {
-    margin-bottom: 5px;
-}
-
-.item {
-    width: 100%;
-}
-
-#welcomeHeading {
-    color: #22356b;
-    font-family: 'Century Gothic', Helvetica, sans-serif, Calibri, 'Franklin Gothic', 'Segoe UI',Frutiger,Tahoma,Helvetica,Sans-Serif;
-    font-size: 1.5em;
-    line-height: 5px;
-}
-
-#photoDescription {
-    color: white;
-    margin-top: -22px;
-    padding-left: 5px;
-}
 
 
-
-
-.carousel-caption {
-    bottom: 0px;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
-    background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
-    margin-left: 60%;
-    width: 40%;
-    left: 0%;
-    right: 0%;
-    padding: 10px;
-    text-align: left;
-    font-family: 'Century Gothic', 'Muli','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-.imageWithCenteredText {
-    /*Vertical Bit*/
-    position: relative;
-}
-
-.carousel-caption-centerText .textOnImage {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
-    background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
-    font-family: 'Century Gothic', 'Muli','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2em;
-    color: white;
-    padding: 8px;
-    width: 40%;
-    text-align: center;
-    /*Vertical Bit*/
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    /*Horizontal Bit*/
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-52%, -50%);
-}
-
-
-.darkImageOverlayT {
-    /*   background: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/shoes.jpg); /* For Safari 5.1 to 6.0 */
-    /*  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/shoes.jpg);/* For Opera 11.1 to 12.0 */
-    /*  background: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/shoes.jpg); /* For Firefox 3.6 to 15 */
-    /*  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/shoes.jpg); /* Standard syntax */
-    background-color: black;
-}
-
-.imageLayerOne {
-    display: block;
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-    .imageLayerOne img {
-        display: block;
-    }
-
-    .imageLayerOne .img-wrap {
-        background-color: black;
-    }
-
-    .imageLayerOne img {
-        opacity: 0.4;
-    }
 
 @media only screen and (min-width: 961px) {
     body {
@@ -517,9 +436,7 @@ CHECK IF I SHOULD I USE BELOW?
 }
 
 .customCollaspeSection {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+
 }
 
 .servicesHeading {
@@ -579,11 +496,6 @@ CHECK IF I SHOULD I USE BELOW?
     padding-bottom: 10px;
 }
 
-.media-paragraphs {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 .quote {
     font-style: italic;
 }
@@ -591,32 +503,33 @@ CHECK IF I SHOULD I USE BELOW?
 aside {
     padding-left: 15px;
 }
-
+/*
 .services .glyphicon {
-    top: 4px; /* override of bootstrap's default of 1px */
+    top: 4px;  override of bootstrap's default of 1px 
     padding-left: 5px;
     padding-right: 10px;
     font-size: 1.2em;
-}
+}*/
 
-.showHideTextAndArrow {
-    float: right;
-    margin-right:10px;
+.glyphicon-menu-down {
+  
+           font-size: 2.1em;
     color: #E62E00;
-       
+top: 5px;
 }
 
-    .showHideTextAndArrow:hover {
+    .glyphicon-menu-down:hover {
         color: red;
     }
 
-    .showHideTextAndArrow:active {
+    .glyphicon-menu-down:active {
         color: red;
     }
 
-    .showHideTextAndArrow:visited {
+    .glyphicon-menu-down:visited {
     color: #E62E00;
     }
+
 .moreLessLink{
      font-size: 1.1em;
 
@@ -913,15 +826,12 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     margin-top: 2000px;
 }
 
-#projectsTitle {
-    margin-left: 10px;
-}
 
 #partialsAnchor {
 }
+.sectionHeading{
 
-#philosphyHeading {
-    margin-right: 10px;
+
 }
 
 #websitePreviews {

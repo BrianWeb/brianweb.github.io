@@ -24,16 +24,13 @@
 
 </head>
 
-<body>
+<body onload="fnExpandReferencesDiv();">
     <div id="entirePage" class="container-fluid" ng-controller="ScrollController">
         <!--not given container-fluid class so that the background colour won't have padding-->
 
-
         <div id="customNav">
             <div class="row centerText">
-
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 noPadding">
-
                     <a href="#">
                         <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2 noPadding " id="logo">
                             <span>
@@ -41,15 +38,12 @@
                             </span>
                         </div>
                     </a>
-
                     <a href="#almax#partialsAnchor" ng-click="goToAnchor()">
                         <div class="col-xs-6 col-sm-9 col-md-9 col-lg-10">
                             <span id="pageHeadingText">Portfolio </span>
                         </div>
                     </a>
-
                 </div>
-
                 <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 contactBox">
                     <span class="contactDetails">
                         <a href="downloads/brian.vcf">
@@ -58,7 +52,6 @@
                         </a>
                     </span>
                 </div>
-
                 <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 contactBox" id="contactBox2">
                     <span class="contactDetails">
                         <a href="mailto:brian@bweb.ie">
@@ -72,35 +65,45 @@
 
         <div id="allContentUnderNavBar">
 
-
-
-            <p id="welcome">
-                Hello, I'm Brian, a freelance Web Designer, specialising in mobile friendly websites. Based in Dublin, Ireland, I'm always looking to add to the wonders of the web, whatever your requirements. Please check out some of my work (which I am always adding to) and don't hesistate to message me at brian@bweb.ie or tweet me <a href="https://twitter.com/intent/tweet?screen_name=BWebDotIE">@BWebDotIE</a>                             (Last updated: 2015/11/14)
-            </p>
-
-            <div class="textSection" ng-include="'partials/philosphy.html'">
-
+            <div class="textSection">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h1 class="inline">About</h1>
+                        <span id="philosophyMoreLessTriangle" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                        <div>
+                            Hello, I'm Brian, a freelance Web Designer, specialising in mobile friendly websites. Based in Dublin, Ireland, I'm always looking to add to the wonders of the web, whatever your requirements. Please check out some of my work (which I am always adding to) and don't hesistate to message me at brian@bweb.ie or tweet me <a href="https://twitter.com/intent/tweet?screen_name=BWebDotIE">@BWebDotIE</a>                             (Last updated: 2015/11/14)
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="row">
-                <div id="partialsAnchor"></div>
+            <div class="textSection">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                        <div ng-include="'partials/philosphy.html'">
+                        </div>
+                    </div><!--/col-->
+                </div><!--/row-->
+            </div>
 
-                <!--Left hand column: Website Thumbnails -->
-                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" id="leftColumn" ng-include="'partials/thumbnails.html'">
+            <div id="partialsAnchor"></div>
 
-                </div><!--/Col-->
+            <div class="textSection">
+                <div class="row">
 
-                <!--Right hand column: Website Preview & Description -->
-                <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9" id="websitePreviews">
+                    <!--Left hand column: Website Thumbnails -->
+                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" id="leftColumn" ng-include="'partials/thumbnails.html'">
+                    </div><!--/Col-->
+                    <!---->
+                    <!--Right hand column: Website Preview & Description -->
+                    <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9" id="websitePreviews">
+                        <div ng-view></div>
+                    </div>
 
-                    <div ng-view></div>
-
-                </div>
-
-
-
-            </div><!--/container-fluid-->
+                </div><!--/Row of thumnails & details-->
+            </div>
         </div><!--/allContentUnderNavBar-->
+
     </div><!--/entirePage-->
 
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
