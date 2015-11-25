@@ -14,7 +14,9 @@ body {
     margin: auto;
     color: #363636;
     text-rendering: optimizeLegibility;
+    background-color: #E8ECF1;
 }
+
 
 a, a:hover, a:active, a:visited {
     text-decoration: none !important; /* !important was used to override BS CSS. Not good practise but text-decoration will never be needed*/
@@ -158,7 +160,7 @@ figcaption {
 }
 
 .centerText {
-
+    text-align: center;
 }
 
 
@@ -172,16 +174,24 @@ figcaption {
 /* ------- /FONTS ------ */
 
 
+/* -------------------  ENTIRE PAGE ------------------- */
+#entirePage {
+}
+/* -------------------  /ENTIRE PAGE ------------------- */
+
 /* -------------------   NAVBAR  ------------------- */
 
-
+#logo {
+    background-color: white;
+}
 
 #customNav {
-    height: 50px;
+    margin-bottom: 10px;
 }
 
 
 #companyDiv {
+    height: 50px;
     padding-left: 10px;
     padding-right: 10px;
     background-color: #6685A3;
@@ -319,14 +329,12 @@ figcaption {
 
 #allContentUnderNavBar {
     background-color: #E8ECF1;
-        margin-bottom: 10px;
-
 }
 
 /* -------------------   TEXT SECTION ------------------- */
 .textSection {
     background-color: #F0F2F5;
-  padding:10px;
+    padding: 10px;
     margin-bottom: 10px;
     border-top: 1px solid #C2CEDA;
 }
@@ -881,7 +889,6 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 }
 
 #websitePreviews {
-
 }
 
 .websiteExampleDescription {
