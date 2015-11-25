@@ -181,68 +181,66 @@ figcaption {
 }
 
 
-#logo {
+#companyDiv {
     padding-left: 10px;
     padding-right: 10px;
     background-color: #6685A3;
     display: inline-block;
-     font-family: 'century-gothic', 'Muli','Franklin Gothic Medium', 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+    font-family: 'century-gothic', 'Muli','Franklin Gothic Medium', 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
 }
 
-#logoText {
+#companyText {
     display: inline;
 }
 
 #companyName {
-   
-    background-color: #6685A3;
-    display: inline-block;
-    text-align: center;
     font-size: 2.5em;
     color: white;
 }
 
 #dotcom {
-    color: white; /*nice grey #717171 */
     font-size: 1.7em;
+    color: white;
 }
 
 
-#logo a {
+#company a {
 }
 
 
 
 #pageHeadingDiv {
-    background-color: white;
     display: inline-block;
 }
 
 
 #pageHeadingText { /*Just vertical centering*/
     margin: 0;
+    color: #6685A3;
     margin-left: 5px;
     font-size: 1.7em;
-
- font-family: 'century-gothic', 'Muli','Franklin Gothic Medium', 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+    font-family: 'century-gothic', 'Muli','Franklin Gothic Medium', 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
 }
+
 
 @media only screen and (max-width:480px) {
 
-    .contactText{
+    .contactText {
         display: none;
     }
-    #pageHeadingText {
-        text-align: center; /*Not working */
-    }
 
-    .visibleSwitch {
-        visibility: hidden;
-    }
 
-    .col-xs-1 .col-xs-2 .col-xs-3 .col-xs-4 .col-xs-5 .col-xs-6 .col-xs-7 .col-xs-8 .col-xs-9 .col-xs-10 .col-xs-11{
+    .col-xs-1 .col-xs-2 .col-xs-3 .col-xs-4 .col-xs-5 .col-xs-6 .col-xs-7 .col-xs-8 .col-xs-9 .col-xs-10 .col-xs-11 {
         padding-left: 5px;
         padding-right: 5px;
+    }
+
+    #logo {
+        background-color: #6685A3;
+    }
+
+    #pageHeadingText {
+        color: white;
     }
 }
 
@@ -302,8 +300,6 @@ figcaption {
     font-size: 2.2em;
 }
 
-
-
 #contactBox2 {
     border-left: 1px solid #E8ECF1;
 }
@@ -323,7 +319,6 @@ figcaption {
 
 #allContentUnderNavBar {
     background-color: #E8ECF1;
-
 }
 
 /* -------------------   TEXT SECTION ------------------- */
@@ -336,14 +331,14 @@ figcaption {
     border-top: 1px solid #C2CEDA;
 }
 
-
+/* Below works but decided against it
 @media only screen and (min-width: 961px) {
     .textSection {
         margin-left: 10px;
         margin-right: 10px;
     }
 }
-
+*/
 
 /* -------------------   /TEXT SECTION ------------------- */
 
