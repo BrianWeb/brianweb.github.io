@@ -40,11 +40,6 @@ h1 {
     color: #E62E00;
     margin-top: 0px; /*Override of strange margin that gets added*/
     margin-bottom: 10px;
-<<<<<<< HEAD
-    padding-right: 5px;
-=======
-    padding-right:5px;
->>>>>>> 578301951325cbd0d79b3f6f9b8d4a6c7bec0e76
 }
 
 h2 {
@@ -161,14 +156,12 @@ figcaption {
 .noPadding {
     padding: 0px;
 }
-<<<<<<< HEAD
 
-.centerText {
+<<<<<<< HEAD .centerText {
     text-align: center;
 }
 
-=======
->>>>>>> 578301951325cbd0d79b3f6f9b8d4a6c7bec0e76
+
 /* -------/CUSTOM CLASSES -------------------------*/
 
 /* -------   FONTS ------ */
@@ -181,31 +174,19 @@ figcaption {
 
 /* -------------------   NAVBAR  ------------------- */
 
-<<<<<<< HEAD
+
 
 #customNav {
     height: 50px;
-=======
-#topDivRow {
-    background-color: white;
-    width: 100%;
-}
-
-#customNav {
-}
-
-.centerText {
-    text-align: center;
->>>>>>> 578301951325cbd0d79b3f6f9b8d4a6c7bec0e76
 }
 
 
 #logo {
     padding-left: 10px;
-<<<<<<< HEAD
     padding-right: 10px;
     background-color: #6685A3;
     display: inline-block;
+     font-family: 'century-gothic', 'Muli','Franklin Gothic Medium', 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
 }
 
 #logoText {
@@ -213,17 +194,10 @@ figcaption {
 }
 
 #companyName {
-    font-family: 'century-gothic', 'Muli','Franklin Gothic Medium', 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
-=======
-    padding-right: 15px;
+   
     background-color: #6685A3;
     display: inline-block;
     text-align: center;
-}
-
-#companyName {
-    font-family: 'Century Gothic', 'Muli','Franklin Gothic Medium', 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
->>>>>>> 578301951325cbd0d79b3f6f9b8d4a6c7bec0e76
     font-size: 2.5em;
     color: white;
 }
@@ -238,32 +212,26 @@ figcaption {
 }
 
 
-<<<<<<< HEAD
+
 #pageHeadingDiv {
     background-color: white;
     display: inline-block;
 }
 
+
 #pageHeadingText { /*Just vertical centering*/
     margin: 0;
     margin-left: 5px;
-=======
+    font-size: 1.7em;
 
-
-#pageHeadingText { /*Just vertical centering*/
-    margin: 0;
-    margin-left: 10px;
->>>>>>> 578301951325cbd0d79b3f6f9b8d4a6c7bec0e76
-    color: #6685A3;
-    font-size: 1.8em;
-    letter-spacing: 2px;
-    font-family:  'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+ font-family: 'century-gothic', 'Muli','Franklin Gothic Medium', 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
 }
 
-@media only screen and (max-width:1200px) {
-<<<<<<< HEAD
-=======
+@media only screen and (max-width:480px) {
 
+    .contactText{
+        display: none;
+    }
     #pageHeadingText {
         text-align: center; /*Not working */
     }
@@ -271,35 +239,23 @@ figcaption {
     .visibleSwitch {
         visibility: hidden;
     }
-}
 
-/* -------- CONTACT FIELDS -------- */
->>>>>>> 578301951325cbd0d79b3f6f9b8d4a6c7bec0e76
-
-    #pageHeadingText {
-    }
-
-    .visibleSwitch {
-        visibility: hidden;
+    .col-xs-1 .col-xs-2 .col-xs-3 .col-xs-4 .col-xs-5 .col-xs-6 .col-xs-7 .col-xs-8 .col-xs-9 .col-xs-10 .col-xs-11{
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 
-<<<<<<< HEAD
+
 /* -------- CONTACT FIELDS -------- */
 
 .contactCol {
     background-color: #E62E00;
     line-height: 50px;
     height: 50px;
-=======
-.contactBox {
-    font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
-    background-color: #E62E00;
-    padding-top: 9px;
-    padding-bottom: 9px;
     text-align: center;
->>>>>>> 578301951325cbd0d79b3f6f9b8d4a6c7bec0e76
 }
+
 
 .contactBox {
     height: 50px;
@@ -318,10 +274,8 @@ figcaption {
     }
 
 .contactText {
-<<<<<<< HEAD
     font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
     font-size: 1.1em;
-=======
     font-weight: 600;
     font-size: 1.1em;
 }
@@ -329,12 +283,11 @@ figcaption {
 .contactBox:hover {
     transition: .3s background-color;
     background-color: red;
->>>>>>> 578301951325cbd0d79b3f6f9b8d4a6c7bec0e76
 }
 
-    .contactText a {
-        color: white;
-    }
+.contactText a {
+    color: white;
+}
 /*Below doesn't seem to work
 .contactDetails a.active {
   background-color: #fff;
@@ -352,11 +305,7 @@ figcaption {
 
 
 #contactBox2 {
-<<<<<<< HEAD
     border-left: 1px solid #E8ECF1;
-=======
-    border-left: 1px solid white;
->>>>>>> 578301951325cbd0d79b3f6f9b8d4a6c7bec0e76
 }
 
 
@@ -374,37 +323,24 @@ figcaption {
 
 #allContentUnderNavBar {
     background-color: #E8ECF1;
-    padding-top: 15px;
+
 }
 
 /* -------------------   TEXT SECTION ------------------- */
 .textSection {
-<<<<<<< HEAD
     background-color: #F0F2F5;
-=======
-  background-color:#F0F2F5;
->>>>>>> 578301951325cbd0d79b3f6f9b8d4a6c7bec0e76
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 5px;
     margin-bottom: 10px;
     border-top: 1px solid #C2CEDA;
-<<<<<<< HEAD
-=======
-
->>>>>>> 578301951325cbd0d79b3f6f9b8d4a6c7bec0e76
 }
 
 
 @media only screen and (min-width: 961px) {
     .textSection {
-<<<<<<< HEAD
         margin-left: 10px;
         margin-right: 10px;
-=======
-            margin-left: 10px;
-              margin-right: 10px;
->>>>>>> 578301951325cbd0d79b3f6f9b8d4a6c7bec0e76
     }
 }
 
@@ -525,10 +461,6 @@ CHECK IF I SHOULD I USE BELOW?
 }
 
 .customCollaspeSection {
-<<<<<<< HEAD
-=======
-
->>>>>>> 578301951325cbd0d79b3f6f9b8d4a6c7bec0e76
 }
 
 .servicesHeading {
@@ -604,16 +536,9 @@ aside {
 }*/
 
 .glyphicon-menu-down {
-<<<<<<< HEAD
     font-size: 2.1em;
     color: #E62E00;
     top: 5px;
-=======
-  
-           font-size: 2.1em;
-    color: #E62E00;
-top: 5px;
->>>>>>> 578301951325cbd0d79b3f6f9b8d4a6c7bec0e76
 }
 
     .glyphicon-menu-down:hover {
@@ -625,7 +550,6 @@ top: 5px;
     }
 
     .glyphicon-menu-down:visited {
-<<<<<<< HEAD
         color: #E62E00;
     }
 
@@ -635,18 +559,15 @@ top: 5px;
 
 #commercialMoreLessTriangle {
     font-size: 2.2em;
-=======
     color: #E62E00;
-    }
-
-.moreLessLink{
-     font-size: 1.1em;
-
 }
 
-#commercialMoreLessTriangle{
-         font-size: 2.2em;
->>>>>>> 578301951325cbd0d79b3f6f9b8d4a6c7bec0e76
+.moreLessLink {
+    font-size: 1.1em;
+}
+
+#commercialMoreLessTriangle {
+    font-size: 2.2em;
 }
 
 
@@ -939,14 +860,8 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 
 #partialsAnchor {
 }
-<<<<<<< HEAD
 
 .sectionHeading {
-=======
-.sectionHeading{
-
-
->>>>>>> 578301951325cbd0d79b3f6f9b8d4a6c7bec0e76
 }
 
 #websitePreviews {
