@@ -2,11 +2,11 @@
 .config(function ($routeProvider)
 { //Angular dependancy injection 
     $routeProvider
-        .when('/almax', { templateUrl: 'partials/almax.html' })
-        .when('/metro', { templateUrl: 'partials/metro.html' })
+        .when('/almax', { templateUrl: 'partials/projects/almax.html' })
+        .when('/metro', { templateUrl: 'partials/projects/metro.html' })
         .when('/test', { template: '<h3>Test Page</h3>' })
 
-    .otherwise({ templateUrl: 'partials/almax.html' });
+    .otherwise({ templateUrl: 'partials/projects/almax.html' });
     reloadOnSearch: false;
 
 });
