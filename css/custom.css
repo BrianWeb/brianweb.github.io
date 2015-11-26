@@ -186,7 +186,7 @@ figcaption {
 }
 
 #customNav {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 
@@ -251,6 +251,10 @@ figcaption {
 
     #pageHeadingText {
         color: white;
+    }
+
+    .websitePreview{
+        display:none; /*Develop a better solution for this, like turing off ng-include or setting the ng-include page as a variable that isn't set on smaller screens*/
     }
 }
 
@@ -335,7 +339,7 @@ figcaption {
 .textSection {
     background-color: #F0F2F5;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     border-top: 1px solid #C2CEDA;
 }
 
@@ -894,4 +898,15 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 .websiteExampleDescription {
     margin-top: 10px;
     margin-bottom: 15px;
+}
+
+
+/* enable for tablet! */
+@media only screen and (min-width: 1920px) {
+	#details-switch {
+		pointer-events: none;
+	}
+	.glyphicon-menu-down {
+		display: none;
+	}	
 }

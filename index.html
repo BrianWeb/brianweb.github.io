@@ -96,7 +96,7 @@
             <div class="textSection">
                 <!--ABOUT-->
                 <div class="row">
-                    <a id="details-switch" data-toggle="collapse" href="#collapsibleAboutDiv" aria-expanded="false" aria-controls="collapsibleAboutDiv">
+                    <a id="details-switch" data-toggle="collapse" href="#collapsibleAboutDiv" aria-expanded="true" aria-controls="collapsibleAboutDiv">
                         <h1 class="inline">About</h1>
                         <span id="aboutMoreLessTriangle" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
                     </a>
@@ -126,16 +126,17 @@
                     <!--Left hand column: Project Thumbnails -->
 
                     <a id="details-switch" data-toggle="collapse" href="#collapsibleProjectsDiv" aria-expanded="false" aria-controls="collapsibleProjectsDiv">
-                        <div id="projectsTitle" class="row customRow">
-                            <h1 class="inline">Projects</h1>
-                            <span id="projectsMoreLessTriangle" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                        </div>
+                        <h1 class="inline">Projects</h1>
+                        <span id="projectsMoreLessTriangle" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
                     </a>
+
                     <div class="media-paragraphs collapse customCollaspeSection" id="collapsibleProjectsDiv">
+
                         <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" id="leftColumn">
                             <div ng-include="'partials/projectThumbnails.html'"></div>
                         </div><!--/Col-->
                         <!---->
+                        
                         <!--Right hand column: Project Previews & Descriptions -->
                         <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9" id="websitePreviews">
                             <div ng-view></div>
