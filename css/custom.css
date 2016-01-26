@@ -63,7 +63,7 @@ h2 {
 
 h3 {
     font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
-    font-size: 1.8em;
+    font-size: 1.7em;
     color: #3b5998;
     margin: 0px;
 }
@@ -118,6 +118,7 @@ figcaption {
 }
 
 .row .keyDescription {
+    margin-bottom:10px;
 }
 
 .list {
@@ -179,6 +180,8 @@ figcaption {
 }
 /* -------------------  /ENTIRE PAGE ------------------- */
 
+
+
 /* -------------------   NAVBAR  ------------------- */
 
 #logo {
@@ -217,18 +220,16 @@ figcaption {
 #company a {
 }
 
-
-
 #pageHeadingDiv {
     display: inline-block;
 }
-
 
 #pageHeadingText { /*Just vertical centering*/
     margin: 0;
     color: #6685A3;
     margin-left: 5px;
     font-size: 1.7em;
+    font-weight:600;
     font-family: 'century-gothic', 'Muli','Franklin Gothic Medium', 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
 }
 
@@ -253,8 +254,8 @@ figcaption {
         color: white;
     }
 
-    .websitePreview{
-        display:none; /*Develop a better solution for this, like turing off ng-include or setting the ng-include page as a variable that isn't set on smaller screens*/
+    .websitePreview {
+        display: none; /*Develop a better solution for this, like turing off ng-include or setting the ng-include page as a variable that isn't set on smaller screens*/
     }
 }
 
@@ -394,6 +395,7 @@ figcaption {
 }
 
 #leftColumn {
+        margin-top:20px;
 }
 
 /* -------------------   WELCOME AND IMAGE BOX------------------- */
@@ -900,10 +902,27 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 
 /* enable for tablet! */
 @media only screen and (min-width: 1920px) {
-	#details-switch {
-		pointer-events: none;
-	}
-	.glyphicon-menu-down {
-		display: none;
-	}	
+    #details-switch {
+        pointer-events: none;
+    }
+
+    .glyphicon-menu-down {
+        display: none;
+    }
+}
+
+.number {
+    font-size: 2.8em;
+}
+
+.keyHeader {
+    font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    color: #E62E00;
+    margin: 0px;
+}
+
+.media-paragraphs{
+    margin-left: auto;
+    margin-right: auto;
 }
