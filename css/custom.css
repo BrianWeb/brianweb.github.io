@@ -179,6 +179,8 @@ figcaption {
 }
 /* -------------------  /ENTIRE PAGE ------------------- */
 
+
+
 /* -------------------   NAVBAR  ------------------- */
 
 #logo {
@@ -217,12 +219,9 @@ figcaption {
 #company a {
 }
 
-
-
 #pageHeadingDiv {
     display: inline-block;
 }
-
 
 #pageHeadingText { /*Just vertical centering*/
     margin: 0;
