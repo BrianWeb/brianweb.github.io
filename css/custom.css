@@ -253,9 +253,11 @@ figcaption {
     #pageHeadingText {
         color: white;
     }
-
+    .caption{
+        display: none;
+    }
     .websitePreview {
-        display: none; /*Develop a better solution for this, like turing off ng-include or setting the ng-include page as a variable that isn't set on smaller screens*/
+       /* display: none; /*Develop a better solution for this, like turing off ng-include or setting the ng-include page as a variable that isn't set on smaller screens*/
     }
 }
 
