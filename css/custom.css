@@ -260,7 +260,12 @@ figcaption {
        /* display: none; /*Develop a better solution for this, like turing off ng-include or setting the ng-include page as a variable that isn't set on smaller screens*/
     }
 }
-
+@media screen and (max-width: 480px) and (min-resolution: 1.5dppx){ /*such as a Huawei G7 with a DPR of 720 wide*/
+ }
+    .thumbnailDescription{
+        display: none;
+    }
+}
 
 /* -------- CONTACT FIELDS -------- */
 
