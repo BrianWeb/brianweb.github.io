@@ -18,7 +18,7 @@
     <script type="text/javascript" src="js/app.js"></script>
 
     <script type="text/javascript" src="js/routes.js"></script>
-   
+
 
     <!--Fonts-->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
@@ -95,69 +95,69 @@
 
             <div id="accordionSections" ng-controller="ExpandAccordionSectionsController">
 
-             
-                    <div class="textSection">
-                        <!--ABOUT-->
-                        <div class="row" ng-controller="ChangeArrowsAccordionSectionsController">
-                            <a id="details-switch" data-toggle="collapse" href="#collapsibleAboutDiv" aria-expanded="true" aria-controls="collapsibleAboutDiv">
-                                <h1 class="inline">About</h1>
-                                <span id="aboutMoreLessTriangle" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                            </a>
-                            <div class="media-paragraphs collapse customCollaspeSection" id="collapsibleAboutDiv">
-                                <div>
-                                    Hello, I'm Brian, a freelance Web Designer, specialising in mobile friendly websites. Based in Dublin, Ireland, I'm always looking to add to the wonders of the web, whatever your requirements. Please check out some of my work (which I am always adding to) and don't hesistate to message me at brian@bweb.ie or tweet me <a href="https://twitter.com/intent/tweet?screen_name=BWebDotIE">@BWebDotIE</a>                             (Last updated: 2015/11/14)
-                                </div>
+
+                <div class="textSection">
+                    <!--ABOUT-->
+                    <div class="row" ng-controller="ChangeArrowsAccordionSectionsController">
+                        <a id="details-switch" data-toggle="collapse" href="#collapsibleAboutDiv" aria-expanded="true" aria-controls="collapsibleAboutDiv">
+                            <h1 class="inline">About</h1>
+                            <span id="aboutMoreLessTriangle" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                        </a>
+                        <div class="media-paragraphs collapse customCollaspeSection" id="collapsibleAboutDiv">
+                            <div>
+                                Hello, I'm Brian, a freelance Web Designer, specialising in mobile friendly websites. Based in Dublin, Ireland, I'm always looking to add to the wonders of the web, whatever your requirements. Please check out some of my work (which I am always adding to) and don't hesistate to message me at brian@bweb.ie or tweet me <a href="https://twitter.com/intent/tweet?screen_name=BWebDotIE">@BWebDotIE</a>                             (Last updated: 2015/11/14)
                             </div>
                         </div>
-                    </div><!--/ABOUT-->
+                    </div>
+                </div><!--/ABOUT-->
 
-                    <div class="textSection">
-                        <!--PHILOSOPHY-->
-                        <div class="row" ng-controller="ChangeArrowsAccordionSectionsController">
-                            <a id="details-switch" data-toggle="collapse" href="#collapsiblePhilosophyDiv" aria-expanded="true" aria-controls="collapsiblePhilosophyDiv">
-                                <div class="sectionHeading">
-                                    <h1 class="inline">Design Philosphy</h1>
-                                    <!--   <span id="philosophyMoreLessTrigger" class="moreLessLink">Show More</span>-->
-                                    <span id="philosophyMoreLessTriangle" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                                </div>
-                            </a>
-
-                            <div class="media-paragraphs collapse customCollaspeSection" id="collapsiblePhilosophyDiv">
-                                <div ng-include="'accordionSections/partials/philosphy.html'">
-                                </div>
-                            </div><!--/customCollaspeSection-->
-                        </div><!--/row-->
-                    </div><!--/PHILOSOPHY-->
-
-                    <div id="partialsAnchor"></div>
-
-                    <div class="textSection">
-                        <!--PROJECTS-->
-
-                        <div class="row" ng-controller="ChangeArrowsAccordionSectionsController">
-                            <!--Left hand column: Project Thumbnails -->
-
-                            <a id="details-switch" data-toggle="collapse" href="#collapsibleProjectsDiv" aria-expanded="false" aria-controls="collapsibleProjectsDiv">
-                                <h1 class="inline">Projects</h1>
-                                <span id="projectsMoreLessTriangle" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                            </a>
-
-                            <div class="media-paragraphs collapse customCollaspeSection" id="collapsibleProjectsDiv">
-
-                                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" id="leftColumn">
-                                    <div ng-include="'accordionSections/partials/projectThumbnails.html'"></div>
-                                </div><!--/Col-->
-                                <!--Right hand column: Project Previews & Descriptions -->
-                                <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9" id="websitePreviews">
-                                    <div ng-view></div>
-                                </div>
-
+                <div class="textSection">
+                    <!--PHILOSOPHY-->
+                    <div class="row" ng-controller="ChangeArrowsAccordionSectionsController">
+                        <a id="details-switch" data-toggle="collapse" href="#collapsiblePhilosophyDiv" aria-expanded="true" aria-controls="collapsiblePhilosophyDiv">
+                            <div class="sectionHeading">
+                                <h1 class="inline">Design Philosphy</h1>
+                                <!--   <span id="philosophyMoreLessTrigger" class="moreLessLink">Show More</span>-->
+                                <span id="philosophyMoreLessTriangle" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
                             </div>
-                            <!--Putting all of the above into one file (like a projects.html partial) resulted in the default route not appearing on page load-->
+                        </a>
 
-                        </div><!--/Row-->
+                        <div class="media-paragraphs collapse customCollaspeSection" id="collapsiblePhilosophyDiv">
+                            <div ng-include="'accordionSections/partials/philosphy.html'">
+                            </div>
+                        </div><!--/customCollaspeSection-->
+                    </div><!--/row-->
+                </div><!--/PHILOSOPHY-->
 
-                    </div><!--/PROJECTS-->
+                <div id="partialsAnchor"></div>
+
+                <div class="textSection">
+                    <!--PROJECTS-->
+
+                    <div class="row" ng-controller="ChangeArrowsAccordionSectionsController">
+                        <!--Left hand column: Project Thumbnails -->
+
+                        <a id="details-switch" data-toggle="collapse" href="#collapsibleProjectsDiv" aria-expanded="false" aria-controls="collapsibleProjectsDiv">
+                            <h1 class="inline">Projects</h1>
+                            <span id="projectsMoreLessTriangle" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                        </a>
+
+                        <div class="media-paragraphs collapse customCollaspeSection" id="collapsibleProjectsDiv">
+
+                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" id="leftColumn">
+                                <div ng-include="'accordionSections/partials/projectThumbnails.html'"></div>
+                            </div><!--/Col-->
+                            <!--Right hand column: Project Previews & Descriptions -->
+                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9" id="websitePreviews">
+                                <div ng-view></div>
+                            </div>
+
+                        </div>
+                        <!--Putting all of the above into one file (like a projects.html partial) resulted in the default route not appearing on page load-->
+
+                    </div><!--/Row-->
+
+                </div><!--/PROJECTS-->
 
             </div><!--/accordionSections-->
 
