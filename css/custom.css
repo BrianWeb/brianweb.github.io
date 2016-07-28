@@ -41,7 +41,6 @@ h1 {
     font-size: 2.2em;
     color: #E62E00;
     margin-top: 0px; /*Override of strange margin that gets added*/
-    margin-bottom: 10px;
 }
 
 h2 {
@@ -69,7 +68,7 @@ h3 {
 }
 
     h3:hover, h3:hover:active {
-        color: #337ab7;
+       /* color: #337ab7;*/ 
     }
 
     h3 a, h3 a:visited {
@@ -92,7 +91,7 @@ h5 {
 
 
 
-img {
+#collapsibleProjectsDiv img {
     max-width: 100%;
     width: auto;
     height: auto;
@@ -322,7 +321,7 @@ figcaption {
     font-size: 2.2em;
 }
 
-#contactBox2 {
+.margin-left {
     border-left: 1px solid #E8ECF1;
 }
 
@@ -350,6 +349,7 @@ figcaption {
     margin-bottom: 8px;
     border-top: 1px solid #C2CEDA;
 }
+
 
 /* Below works but decided against it
 @media only screen and (min-width: 961px) {
@@ -402,7 +402,7 @@ figcaption {
 }
 
 #leftColumn {
-        margin-top:20px;
+
 }
 
 /* -------------------   WELCOME AND IMAGE BOX------------------- */
@@ -457,99 +457,6 @@ CHECK IF I SHOULD I USE BELOW?
 
 
 
-
-
-/* -------------------   SERVICES ------------------- */
-@media only screen and (min-width: 767px) and (max-width: 991px) {
-    #welcomeAndServices {
-        margin-top: -105px;
-    }
-}
-
-.services {
-    border-left: 1px solid #D9E0E8;
-    border-right: 1px solid #D9E0E8;
-    border-bottom: 1px solid #D9E0E8;
-    background-color: white;
-    margin-bottom: 10px;
-    /* background-color:#D9E0E8; similar to above, but darker */
-    padding: 15px;
-}
-
-.customCollaspeSection {
-}
-
-.servicesHeading {
-    font-family: 'century-gothic', Helvetica, sans-serif, Calibri, 'Franklin Gothic', 'Segoe UI',Frutiger,Tahoma,Helvetica,Sans-Serif;
-    background-color: #CC0000;
-    padding: 2px;
-    font-size: 1.8em;
-    width: 100%;
-    height: 100%;
-    color: white;
-    text-align: center;
-}
-
-#servicesSubHeading {
-    margin-bottom: 5px;
-    font-size: 1.2em;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    padding-left: 2px;
-    padding-right: 2px;
-    font-family: Calibri, Helvetica, sans-serif, Calibri, 'Franklin Gothic', 'Segoe UI',Frutiger,Tahoma,Helvetica,Sans-Serif;
-    text-align: center;
-}
-
-.services .media-heading {
-    padding-top: 20px;
-}
-
-
-#generalServicesDescription {
-    color: #0066FF;
-}
-
-.media-left .services {
-    width: 60%;
-}
-
-.services .media {
-    border: 2px solid #D9E0E8;
-    margin-top: 10px;
-    padding-right: 10px;
-}
-
-.services .media-object {
-    /*light blue: background-color: #e3eff8; */
-    background-color: white;
-    width: 100px;
-    text-align: center;
-}
-
-.services .fa {
-    color: #CC0000;
-    line-height: 100px;
-}
-
-.services .media-body {
-    padding-bottom: 10px;
-}
-
-.quote {
-    font-style: italic;
-}
-
-aside {
-    padding-left: 15px;
-}
-/*
-.services .glyphicon {
-    top: 4px;  override of bootstrap's default of 1px 
-    padding-left: 5px;
-    padding-right: 10px;
-    font-size: 1.2em;
-}*/
 
 .glyphicon-menu-down {
     font-size: 2.1em;
@@ -896,6 +803,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 }
 
 .sectionHeading {
+    margin-bottom: 15px;
 }
 
 #websitePreviews {
@@ -929,3 +837,34 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     margin: 0px;
 }
 
+.designPhilChacateristic{
+    background-color: yellow;
+
+}
+
+        .floating-box {
+            display: inline-block;
+            margin: 10px;
+            border: 3px solid #73AD21;
+
+        }
+  
+
+
+        .philDescription {
+            margin-left: 50px;
+        }
+
+
+        .media-object{
+            width:100px;
+        fill:#3b5998;
+        }
+
+        .media-objectSVG{
+    
+        }
+
+.media-left, .media > .pull-left {
+    padding-right: 0px; /*Bootstrap override*/
+}
