@@ -1,4 +1,6 @@
 #BW Comment: Below are common things to ignore. 
+
+*.dat #syncToy files are .dat
 #Take from: https://gist.github.com/octocat/9257657
 
 # Compiled source #
