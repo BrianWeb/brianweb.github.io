@@ -1,16 +1,17 @@
 ﻿<!DOCTYPE html>
 <html ng-app="MainModule">
 <head>
+    <title>Custom, Minimalist, Mobile Friendly, Fast, Responsive Designs</title>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>BWeb.ie</title>
+    <meta name="description" content="Web Design and Development in Swords, north Dublin. Experts in custom single page, minimalist, mobile friendly, fast and responsive designs." />
 
     <!--CSS-
     <link href="css/library/bootstrap.min.css" rel="stylesheet" /><!--Custom Bootstrap-->
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/custom.css" rel="stylesheet" />
 
     <!--Angular-->
@@ -24,14 +25,14 @@
     <link href="fonts/icon_sosa/fontSosa.css" rel="stylesheet" />
     <link href="fonts/numbers/numbers.css" rel="stylesheet" />
 
-
-    <!--Favicons-->
+    <!--Favicons: all generated from https://realfavicongenerator.net-->
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/faviconsmanifest.json">
     <link rel="mask-icon" href="/faviconssafari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body>
@@ -107,12 +108,12 @@
                 <div class="textSection">
                     <!--ABOUT-->
                     <div class="row" ng-controller="ChangeArrowsAccordionSectionsController">
-                        <div class="sectionHeading">
-                            <a id="details-switch" data-toggle="collapse" href="#collapsibleAboutDiv" aria-expanded="true" aria-controls="collapsibleAboutDiv">
+                        <a data-toggle="collapse" href="#collapsibleAboutDiv" aria-expanded="true" aria-controls="collapsibleAboutDiv">
+                            <div class="sectionHeading">
                                 <h1 class="inline">About</h1>
                                 <span id="aboutMoreLessTriangle" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                            </a>
-                        </div><!--/sectionHeading-->
+                            </div><!--/sectionHeading-->
+                        </a>
                         <div class="media-paragraphs collapse customCollaspeSection" id="collapsibleAboutDiv">
                             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-7">
                                 Hello, I'm Brian, a freelance Web Designer, specialising in mobile friendly websites. Based in Dublin, Ireland, I'm always looking to add to the wonders of the web, whatever your requirements. Please check out some of my work (which I am always adding to) and don't hesistate to message me at brian@bweb.ie or tweet me <a href="https://twitter.com/intent/tweet?screen_name=BWebDotIE">@BWebDotIE</a>
@@ -125,12 +126,15 @@
                 <div class="textSection">
                     <!--PHILOSOPHY-->
                     <div class="row" ng-controller="ChangeArrowsAccordionSectionsController">
-                        <div class="sectionHeading">
-                            <a id="details-switch" data-toggle="collapse" href="#collapsiblePhilosophyDiv" aria-expanded="true" aria-controls="collapsiblePhilosophyDiv">
+
+
+                        <a data-toggle="collapse" href="#collapsiblePhilosophyDiv" aria-expanded="true" aria-controls="collapsiblePhilosophyDiv">
+                            <div class="sectionHeading">
                                 <h1 class="inline">Design Philosphy</h1>
                                 <span id="philosophyMoreLessTriangle" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                            </a>
-                        </div><!--/sectionHeading-->
+                            </div><!--/sectionHeading-->
+                        </a>
+
                         <div class="media-paragraphs collapse customCollaspeSection" id="collapsiblePhilosophyDiv">
                             <div ng-include="'accordionSections/partials/philosphy/philosphy.html'">
                             </div>
@@ -145,12 +149,14 @@
 
                     <div class="row" ng-controller="ChangeArrowsAccordionSectionsController">
                         <!--Left hand column: Project Thumbnails -->
-                        <div class="sectionHeading">
-                            <a id="details-switch" data-toggle="collapse" href="#collapsibleProjectsDiv" aria-expanded="false" aria-controls="collapsibleProjectsDiv">
+
+                        <a data-toggle="collapse" href="#collapsibleProjectsDiv" aria-expanded="false" aria-controls="collapsibleProjectsDiv">
+                            <div class="sectionHeading">
                                 <h1 class="inline">Projects</h1>
                                 <span id="projectsMoreLessTriangle" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                            </a>
-                        </div><!--/sectionHeading-->
+                            </div><!--/sectionHeading-->
+                        </a>
+
                         <div class="media-paragraphs collapse customCollaspeSection" id="collapsibleProjectsDiv">
 
                             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 noPadding" id="leftColumn">
@@ -169,7 +175,6 @@
             </div><!--/accordionSections-->
 
         </div><!--/allContentUnderNavBar-->
-
     </div><!--/entirePage-->
 
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
