@@ -83,7 +83,9 @@ h4 {
     color: #E62E00;
 }
 
-
+td{
+    padding:10px;
+}
 
 
 #collapsibleProjectsDiv img {
@@ -747,4 +749,8 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 
 .media-left, .media > .pull-left {
     padding-right: 0px; /*Bootstrap override*/
+}
+
+#downloadDetails{
+    margin-top:20px;
 }
