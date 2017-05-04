@@ -43,6 +43,10 @@ Thumbs.db
 
 
 #####################
+
+##BW Additions:
+/app/css/backups
+
 ##BW COMMENT: Below is specific to Visual Studio
 ##from: https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
