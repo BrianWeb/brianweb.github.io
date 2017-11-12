@@ -2,40 +2,40 @@ h1,
 h3 {
     font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
     margin: 0;
-    color: #E62E00
+    color: #E62E00;
 }
 
 h1,
 h3,
 h4 {
-    color: #E62E00
+    color: #E62E00;
 }
 
 .alignRight,
 .floatRight {
-    float: right
+    float: right;
 }
 
 #companyText,
 .inline {
-    display: inline
+    display: inline;
 }
 
 .centerText,
 .contactCol,
 .icon_sosa,
 footer {
-    text-align: center
+    text-align: center;
 }
 
 .boxInner,
 .wrap {
-    overflow: hidden
+    overflow: hidden;
 }
 
 html {
     border-radius: 0;
-    text-decoration: none
+    text-decoration: none;
 }
 
 body {
@@ -93,7 +93,7 @@ h2 {
     font-size: 1.8em;
     color: #3b5998;
     margin-top: 0;
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 h3 {
@@ -111,12 +111,6 @@ h4 {
 
 tr {
     padding: 10px;
-}
-
-#collapsibleProjectsDiv img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
 }
 
 figure {
@@ -144,13 +138,6 @@ figcaption {
     padding: 0;
 }
 
-.customRow {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-}
-
 .row {
     margin: 0;
 }
@@ -158,38 +145,20 @@ figcaption {
 .thumbnail {
     border-radius: 0;
 }
-
+/*
 #companyDiv,
 #pageHeadingDiv {
     display: inline-block;
 }
-
-.noWrap {
-    white-space: nowrap;
-}
-
-@font-face {
-    font-family: century-gothic;
-    src: url(../fonts/century-gothic.ttf) format('truetype');
-}
-
-#logo {
-    background-color: #fff;
-}
-
-#customNav {
-    margin-bottom: 8px;
-}
-
-#companyDiv {
+    #companyDiv {
     height: 50px;
     padding-left: 10px;
     padding-right: 10px;
-    /*background-color: #6685A3*/
-    background-color: #23395c;
+    /*background-color: #6685A3;
+background-color: #23395c;
 }
 
-#companyName {
+    #companyName {
     font-size: 2.5em;
     color: #fff
 }
@@ -199,54 +168,63 @@ figcaption {
     color: #fff
 }
 
+    
 #pageHeadingText {
     margin: 0 0 0 5px;
     color: #1f365b;
     font-size: 1.7em;
     font-weight: 600
 }
+*/
+
+.noWrap {
+    white-space: nowrap;
+}
+
+@font-face {
+    font-family: century-gothic;
+    src: url(../fonts/century-gothic.ttf) format('truetype');
+}
+#customNav {
+    margin-bottom: 8px;
+    background-color: #fff;
+}
+#logo {
+  
+    padding-top:5px;
+}
 
 .contactBox,
 .contactBox a,
 .contactText a {
-    color: #fff
+    color: #fff;
 }
 
 .contactText,
 .keyHeader {
-    font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif
+    font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
 }
 
 @media only screen and (max-width:480px) {
     .contactText,
     .thumbnailDescription {
-        display: none
+        display: none;
     }
 
     .col-xs-1 .col-xs-2 .col-xs-3 .col-xs-4 .col-xs-5 .col-xs-6 .col-xs-7 .col-xs-8 .col-xs-9 .col-xs-10 .col-xs-11 {
         padding-left: 5px;
-        padding-right: 5px
+        padding-right: 5px;
     }
 
-    #logo {
-        background-color: #6685A3
-    }
-
-    #pageHeadingText {
-        color: #fff;
-    }
 }
 
 .contactBox,
+
 .contactCol {
-    height: 50px;
+
     line-height: 50px;
     /*nice orange background-color: #E62E00;*/
     background-color: #4d6680;
-}
-
-.thumbnailDescription {
-    display: none;
 }
 
 .contactText {
@@ -256,8 +234,13 @@ figcaption {
 
 .contactBox:hover {
     transition: .3s background-color;
-    background-color: red;
+    background-color: #4b7cad;
 }
+
+.thumbnailDescription {
+    display: none;
+}
+
 
 .icon_sosa {
     vertical-align: middle;
@@ -284,7 +267,7 @@ figcaption {
     font-size: 2.1em;
     color: #E62E00;
     top: 5px;
-    padding-left: 10px;
+  
 }
 
     .sectionHeading .glyphicon-menu-down:active,
@@ -300,7 +283,6 @@ figcaption {
     font-size: 2.1em;
     color: #E62E00;
     top: 5px;
-    padding-left: 10px
 }
 
     .sectionHeading .glyphicon-menu-up a:active,
@@ -318,7 +300,7 @@ figcaption {
 
 .textSection {
     background-color: #F0F2F5;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 8px;
     border-top: 1px solid #C2CEDA
 }
@@ -354,7 +336,11 @@ figcaption {
     .thumbnailCaptionHeading:hover:active {
         color: #337ab7
     }
-
+#collapsibleProjectsDiv img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
 .websiteExampleImage {
     border: 2px solid #C2CEDA;
     margin-bottom: 15px
@@ -406,6 +392,7 @@ footer {
     padding-top: 10px
 }
 
+/*
 .wrap {
     margin: 10px
 }
@@ -459,7 +446,7 @@ body.touch .boxInner.touchFocus .titleBox {
         padding-bottom: 25%
     }
 }
-
+*/
 .projectTypeHeadingDiv {
     margin-top: 15px;
     margin-bottom: 10px;
