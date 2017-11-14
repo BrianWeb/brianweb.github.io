@@ -185,13 +185,13 @@ background-color: #23395c;
     font-family: century-gothic;
     src: url(../fonts/century-gothic.ttf) format('truetype');
 }
+
 #customNav {
     margin-bottom: 8px;
     background-color: #fff;
 }
+
 #logo {
-  
-    padding-top:10px;
 }
 
 .contactBox,
@@ -205,6 +205,30 @@ background-color: #23395c;
     font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
 }
 
+
+.contactBox,
+.contactCol {
+    line-height: 50px;
+    /*nice orange background-color: #E62E00;*/
+    background-color: #336699;
+}
+
+@media only screen and (min-width:768px) {
+    #contactCol {
+        padding-top: 8px;
+    }
+}
+
+.contactBox:hover {
+    transition: .3s background-color;
+    background-color: #003366;
+}
+
+.contactText {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
 @media only screen and (max-width:480px) {
     .contactText,
     .thumbnailDescription {
@@ -215,27 +239,8 @@ background-color: #23395c;
         padding-left: 5px;
         padding-right: 5px;
     }
-
 }
 
-.contactBox,
-
-.contactCol {
-
-    line-height: 50px;
-    /*nice orange background-color: #E62E00;*/
-    background-color: #4d6680;
-}
-
-.contactText {
-    font-weight: 600;
-    font-size: 1.1em;
-}
-
-.contactBox:hover {
-    transition: .3s background-color;
-    background-color: #4b7cad;
-}
 
 .thumbnailDescription {
     display: none;
@@ -267,7 +272,6 @@ background-color: #23395c;
     font-size: 2.1em;
     color: #E62E00;
     top: 5px;
-  
 }
 
     .sectionHeading .glyphicon-menu-down:active,
@@ -336,11 +340,13 @@ background-color: #23395c;
     .thumbnailCaptionHeading:hover:active {
         color: #337ab7
     }
+
 #collapsibleProjectsDiv img {
     max-width: 100%;
     width: auto;
     height: auto;
 }
+
 .websiteExampleImage {
     border: 2px solid #C2CEDA;
     margin-bottom: 15px
