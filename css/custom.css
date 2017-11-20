@@ -47,7 +47,7 @@ body {
     margin: auto;
     color: #363636;
     text-rendering: optimizeLegibility;
-    background-color: #E8ECF1;
+    /*background-color: #E8ECF1;*/
 }
 
 a,
@@ -188,11 +188,10 @@ background-color: #23395c;
 
 #customNav {
     margin-bottom: 8px;
+margin-top:6px;
     background-color: #fff;
 }
 
-#logo {
-}
 
 .contactBox,
 .contactBox a,
@@ -303,7 +302,7 @@ background-color: #23395c;
 }
 
 .textSection {
-    background-color: #F0F2F5;
+    /* background-color: #F0F2F5;*/
     padding: 15px;
     margin-bottom: 8px;
     border-top: 1px solid #C2CEDA
@@ -544,9 +543,6 @@ body.touch .boxInner.touchFocus .titleBox {
     margin: 0
 }
 
-.designPhilChacateristic {
-    background-color: #ff0
-}
 
 .floating-box {
     display: inline-block;
@@ -571,3 +567,55 @@ body.touch .boxInner.touchFocus .titleBox {
 #downloadDetails {
     margin-top: 20px
 }
+
+
+#BWebLogo {
+    
+}
+
+
+#logoDiv{
+width: 100%;
+}
+
+#logoCol{
+
+}
+
+.SVGs{
+ 
+}
+
+#01_responsive_design{
+    
+}
+
+.serviceDiv {
+    background-color: #efefef; 
+    margin-top:1.1em;
+    margin-bottom: 1.4em;
+
+   
+}
+.serviceSvg, .serviceHeading {
+   
+    background-color: #6e7b91;
+    color: white;
+}
+
+.serviceSvg {
+    padding-top: 1.6em;
+    padding-bottom: 1.5em;
+    fill: #fff;
+}
+
+.serviceHeading, .serviceSubHeading {
+    padding-bottom: .6em;
+}
+
+
+.serivceDescription {
+    padding: 1.4em;
+    height:330px;
+}
+
