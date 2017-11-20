@@ -605,13 +605,13 @@ height:50px;
 }
 
 .serviceSvg {
-    padding-top: 1.6em;
-    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    padding-bottom: .6em;
     fill: #fff;
 }
 
 .serviceHeading, .serviceSubHeading {
-    padding-bottom: .6em;
+    padding-bottom: .5em;
 }
 
 
