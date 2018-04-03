@@ -16,7 +16,7 @@ function fnExpandDivs() {
         document.getElementById("referencesMoreLessTrigger").innerHTML = 'Show&nbsp;More';
         document.getElementById("referencesMoreLessTriangle").className = "glyphicon glyphicon-triangle-bottom";
     }
-};
+}
 
 
 //Display 'Show Less' or 'Show More' and up/down arrows on the services divs depending on the state that they are in. The above

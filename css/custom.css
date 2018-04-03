@@ -11,6 +11,20 @@ h4 {
     color: #E62E00;
 }
 
+
+h2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+h3 {
+    padding-bottom: 15px;
+}
+article {
+    padding-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 .alignRight,
 .floatRight {
     float: right;
@@ -47,6 +61,7 @@ body {
     margin: auto;
     color: #363636;
     text-rendering: optimizeLegibility;
+    font-size:14pt;
     /*background-color: #E8ECF1;*/
 }
 
@@ -114,7 +129,7 @@ tr {
 }
 
 figure {
-    padding: 5px;
+    padding: 10px;
 }
 
 figcaption {
@@ -126,8 +141,10 @@ figcaption {
 }
 
 .row .keyDescription {
-    margin-bottom: 10px;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
+
 
 .list {
     padding-left: 15px;
@@ -186,9 +203,13 @@ background-color: #23395c;
     src: url(../fonts/century-gothic.ttf) format('truetype');
 }
 
-#customNav {
-    margin-bottom: 8px;
-margin-top:6px;
+.contactBox {
+padding:10px;
+}
+
+#logoDiv {
+    margin-bottom: 6px;
+    margin-top: 6px;
     background-color: #fff;
 }
 
@@ -210,12 +231,6 @@ margin-top:6px;
     line-height: 50px;
     /*nice orange background-color: #E62E00;*/
     background-color: #336699;
-}
-
-@media only screen and (min-width:768px) {
-    #contactCol {
-        padding-top: 8px;
-    }
 }
 
 .contactBox:hover {
@@ -263,6 +278,15 @@ margin-top:6px;
     background-color: #E8ECF1;
 }
 
+
+
+.sectionHeading {
+    padding-top: 1.2em;
+    padding-bottom: 2em;
+    text-align: center;
+
+}
+
 .sectionHeading h1:hover {
     color: #7f0000;
 }
@@ -279,7 +303,7 @@ margin-top:6px;
     }
 
     .sectionHeading .glyphicon-menu-down a:visited {
-        color: #E62E00
+        color: #E62E00;
     }
 
 .sectionHeading .glyphicon-menu-up {
@@ -294,39 +318,40 @@ margin-top:6px;
     }
 
     .sectionHeading .glyphicon-menu-up a:visited {
-        color: #E62E00
+        color: #E62E00;
     }
 
 .customCollaspeSection {
-    margin-top: 15px
+
 }
 
 .textSection {
     /* background-color: #F0F2F5;*/
     padding: 15px;
     margin-bottom: 8px;
-    border-top: 1px solid #C2CEDA
+    border-top: 1px solid #C2CEDA;
+    
 }
 
 @media only screen and (min-width:961px) {
     body {
-        -webkit-zoom: 130%
+        -webkit-zoom: 130%;
     }
 }
 
 .thumnailSection .thumbnail {
     background-color: #DEE0E3;
-    border: 1px solid #C2CEDA
+
 }
 
 .websitePreview .thumbnail:hover {
     background-color: #6685A3;
-    transition: background-color 1s
+    transition: background-color 1s;
 }
 
 .caption {
     background-color: #E1E4EA;
-    border-top: 2px solid #C2CEDA
+
 }
 
 .thumbnailCaptionHeading {
@@ -475,12 +500,12 @@ body.touch .boxInner.touchFocus .titleBox {
 
 @font-face {
     font-family: Florsn01;
-    src: url(../fonts/Florsn01.ttf) format('truetype')
+    src: url(../fonts/Florsn01.ttf) format('truetype');
 }
 
 @font-face {
     font-family: RobotoCondensed-Regular;
-    src: url(../fonts/RobotoCondensed-Regular.ttf) format('truetype')
+    src: url(../fonts/RobotoCondensed-Regular.ttf) format('truetype');
 }
 
 .thumbnail {
@@ -535,8 +560,12 @@ body.touch .boxInner.touchFocus .titleBox {
 
 .number {
     font-size: 2.5em
+
 }
 
+.articleDiv {
+    margin-bottom: 1.5em;
+}
 .keyHeader {
     font-size: 1.8em;
     color: #E62E00;
@@ -551,7 +580,8 @@ body.touch .boxInner.touchFocus .titleBox {
 }
 
 .philDescription {
-    margin-left: 50px
+    margin-left: 50px;
+    text-align: center;
 }
 
 .media-object {
@@ -592,36 +622,46 @@ height:50px;
 }
 
 .serviceDiv {
-    background-color: #efefef; 
-    margin-top:1.1em;
-    margin-bottom: 1.4em;
-
-   
+    /* background-color: #efefef; */
+  
 }
 .serviceSvg, .serviceHeading {
-    background-color: #6e7b91;
+    color: #6e7b91;
+}
+
+.serviceHeading2 {
+    font-size: 1.4em;
+    padding: 15px;
     color: white;
+    background-color: #6e7b91;
+    font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
 }
 
 .serviceSvg {
-    padding-top: 1.5em;
-    padding-bottom: .6em;
-    fill: #fff;
+    padding-top: 1.1em;
+    fill: #6e7b91;
 }
 
 .serviceHeading, .serviceSubHeading {
-    padding-bottom: .5em;
+
 }
 
 
 .serivceDescription {
-    padding: 1.4em;
+    padding-top: 1.4em;
+    padding-bottom: 1.4em;
 }
 
 .noPadding-right{
     padding-right:0;
 }
 
-noPadding-left{
+.noPadding-left{
     padding-left:0;
+}
+
+
+#aboutSection{
+    padding-bottom: 1.8em;
+    text-align: center;
 }
