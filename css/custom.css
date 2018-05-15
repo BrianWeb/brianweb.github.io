@@ -282,42 +282,28 @@ padding:10px;
 
 .sectionHeading {
     padding-top: 1.2em;
-    padding-bottom: 2em;
+    padding-bottom: 1.6em;
     text-align: center;
-
+    font-size: 1.4em;
+    color: #E62E00;
+    top: 5px;
 }
 
 .sectionHeading h1:hover {
     color: #7f0000;
 }
 
-.sectionHeading .glyphicon-menu-down {
-    font-size: 2.1em;
-    color: #E62E00;
-    top: 5px;
-}
-
-    .sectionHeading .glyphicon-menu-down:active,
-    .sectionHeading .glyphicon-menu-down:hover {
+    .sectionHeading .moreLessTriangle{
+        font-size: 1.8em;
+    }
+    
+    
+    .sectionHeading:active,
+    .sectionHeading:hover {
         color: #ba0000;
     }
 
-    .sectionHeading .glyphicon-menu-down a:visited {
-        color: #E62E00;
-    }
-
-.sectionHeading .glyphicon-menu-up {
-    font-size: 2.1em;
-    color: #E62E00;
-    top: 5px;
-}
-
-    .sectionHeading .glyphicon-menu-up a:active,
-    .sectionHeading .glyphicon-menu-up:hover {
-        color: #ba0000
-    }
-
-    .sectionHeading .glyphicon-menu-up a:visited {
+    .sectionHeading a:visited {
         color: #E62E00;
     }
 
