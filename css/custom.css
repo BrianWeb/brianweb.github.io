@@ -12,19 +12,52 @@ h4 {
 }
 
 
-h2 {
-    padding-top: 15px;
-    padding-bottom: 15px;
+h1 {
+    font-size: 2.4em;
 }
+
+    h1 a:hover,
+    h1 a:hover:active {
+        color: #ff0;
+    }
+
+    h1 a,
+    h1 a:visited,
+    h2 a,
+    h2 a:visited {
+        color: #4D4D4D;
+        text-decoration: none;
+    }
+
+
+h2 {
+    padding-top: 0px;
+    padding-bottom: 15px;
+    font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+    font-size: 1.8em;
+    color: #3b5998;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 
 h3 {
     padding-bottom: 15px;
+    font-size: 1.4em;
 }
+
+
+
+h4 {
+    font-family: 'Roboto Condensed', 'Core Sans N 25', 'Franklin Gothic', 'Segoe UI', Frutiger, Tahoma, Helvetica, Sans-Serif;
+}
+
 article {
-    padding-bottom: 15px;
+    padding-bottom: 0px;
     padding-left: 0px;
     padding-right: 0px;
 }
+
 .alignRight,
 .floatRight {
     float: right;
@@ -61,7 +94,7 @@ body {
     margin: auto;
     color: #363636;
     text-rendering: optimizeLegibility;
-    font-size:14pt;
+    font-size: 12pt;
     /*background-color: #E8ECF1;*/
 }
 
@@ -86,38 +119,6 @@ ul {
     list-style-type: square;
 }
 
-h1 {
-    font-size: 2.4em;
-}
-
-    h1 a:hover,
-    h1 a:hover:active {
-        color: #ff0;
-    }
-
-    h1 a,
-    h1 a:visited,
-    h2 a,
-    h2 a:visited {
-        color: #4D4D4D;
-        text-decoration: none;
-    }
-
-h2 {
-    font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
-    font-size: 1.8em;
-    color: #3b5998;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-h3 {
-    font-size: 1.4em;
-}
-
-h4 {
-    font-family: 'Roboto Condensed', 'Core Sans N 25', 'Franklin Gothic', 'Segoe UI', Frutiger, Tahoma, Helvetica, Sans-Serif;
-}
 
 #companyDiv,
 #pageHeadingText {
@@ -204,7 +205,7 @@ background-color: #23395c;
 }
 
 .contactBox {
-padding:10px;
+    padding: 10px;
 }
 
 #logoDiv {
@@ -233,10 +234,10 @@ padding:10px;
     background-color: #336699;
 }
 
-.contactBox:hover {
-    transition: .3s background-color;
-    background-color: #003366;
-}
+    .contactBox:hover {
+        transition: .3s background-color;
+        background-color: #003366;
+    }
 
 .contactText {
     font-weight: 600;
@@ -289,15 +290,15 @@ padding:10px;
     top: 5px;
 }
 
-.sectionHeading h1:hover {
-    color: #7f0000;
-}
+    .sectionHeading h1:hover {
+        color: #7f0000;
+    }
 
-    .sectionHeading .moreLessTriangle{
+    .sectionHeading .moreLessTriangle {
         font-size: 1.8em;
     }
-    
-    
+
+
     .sectionHeading:active,
     .sectionHeading:hover {
         color: #ba0000;
@@ -308,15 +309,13 @@ padding:10px;
     }
 
 .customCollaspeSection {
-
 }
 
 .textSection {
     /* background-color: #F0F2F5;*/
     padding: 15px;
     margin-bottom: 8px;
-    border-top: 1px solid #C2CEDA;
-    
+    border-bottom: 1px solid #C2CEDA;
 }
 
 @media only screen and (min-width:961px) {
@@ -326,8 +325,8 @@ padding:10px;
 }
 
 .thumnailSection .thumbnail {
-    background-color: #DEE0E3;
-
+    background-color: #336699;
+    padding: 2px
 }
 
 .websitePreview .thumbnail:hover {
@@ -336,14 +335,16 @@ padding:10px;
 }
 
 .caption {
-    background-color: #E1E4EA;
+    background-color: #31404e;
+    padding: 1em;
 
 }
 
 .thumbnailCaptionHeading {
-    color: #3b5998;
+    color: white;
+    font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
     font-size: 1.5em;
-    padding-bottom: 5px
+    text-align: center;
 }
 
     .thumbnailCaptionHeading:hover,
@@ -463,6 +464,11 @@ body.touch .boxInner.touchFocus .titleBox {
     }
 }
 */
+
+#projectThumbnailsPage { /*override of bootstrap's padding for column padding applied to project thumbnail section's leftmost and rightmost thumbnails */
+    margin-left: -15px;
+    margin-right: -15px;
+}
 .projectTypeHeadingDiv {
     margin-top: 15px;
     margin-bottom: 10px;
@@ -494,14 +500,9 @@ body.touch .boxInner.touchFocus .titleBox {
     src: url(../fonts/RobotoCondensed-Regular.ttf) format('truetype');
 }
 
-.thumbnail {
-    padding: 2px
-}
 
-#commercialSection {
-    border-top: 1px solid #C00;
-    padding-top: 10px
-}
+
+
 
 @media only screen and (max-width:320px) {
     .box {
@@ -524,7 +525,10 @@ body.touch .boxInner.touchFocus .titleBox {
         display: none
     }
 }
-
+#commercialSection {
+    border-top: 1px solid #C00;
+    padding-top: 10px
+}
 #scrollArea {
     height: 600px
 }
@@ -546,12 +550,12 @@ body.touch .boxInner.touchFocus .titleBox {
 
 .number {
     font-size: 2.5em
-
 }
 
 .articleDiv {
     margin-bottom: 1.5em;
 }
+
 .keyHeader {
     font-size: 1.8em;
     color: #E62E00;
@@ -572,7 +576,7 @@ body.touch .boxInner.touchFocus .titleBox {
 
 .media-object {
     width: 100px;
-    fill: #3b5998
+    fill: #3b5998;
 }
 
 .media-left,
@@ -586,33 +590,37 @@ body.touch .boxInner.touchFocus .titleBox {
 
 
 #BWebLogo {
-    
 }
 
 
-#logoDiv{
-width: 100%;
-height:50px;
+#logoDiv {
+    width: 100%;
+    height: 50px;
 }
 
-#logoCol{
-
+#logoCol {
 }
 
-.SVGs{
- 
+.SVGs {
 }
 
-#01_responsive_design{
-    
+#01_responsive_design {
 }
+
+/*DESIGN PHIL*/
 
 .serviceDiv {
     /* background-color: #efefef; */
-  
+    border: 4px solid #f4f7fa;
+    margin-bottom: 1.8em;
 }
+
+.serviceSvgAndHeader {
+    background-color: #f4f7fa;
+}
+
 .serviceSvg, .serviceHeading {
-    color: #6e7b91;
+    color: #336699;
 }
 
 .serviceHeading2 {
@@ -624,30 +632,42 @@ height:50px;
 }
 
 .serviceSvg {
-    padding-top: 1.1em;
-    fill: #6e7b91;
+    padding-top: .5em;
+    fill: #336699;
 }
 
-.serviceHeading, .serviceSubHeading {
-
+.serviceSubHeading {
+    color: #E62E00;
+    font-weight: 600;
 }
 
 
 .serivceDescription {
+    background-color: #eff2f5;
     padding-top: 1.4em;
-    padding-bottom: 1.4em;
+    padding-bottom: .8em; /*not 1.4, like padding-top because <p> element already adds about .6*/
 }
 
-.noPadding-right{
-    padding-right:0;
+.noPadding-right {
+    padding-right: 0;
 }
 
-.noPadding-left{
-    padding-left:0;
+.noPadding-left {
+    padding-left: 0;
 }
 
 
-#aboutSection{
+#aboutSection {
+    padding-top: 1.8em;
     padding-bottom: 1.8em;
     text-align: center;
+}
+
+#websitePreviews {
+    margin-top: 3em;
+
+}
+
+.websitePreview {
+    margin-bottom: 30px;
 }
