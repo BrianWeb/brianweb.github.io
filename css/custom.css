@@ -340,6 +340,11 @@ background-color: #23395c;
 
 }
 
+.caption:hover,
+.caption:hover:active {
+    color: #337ab7
+}
+
 .thumbnailCaptionHeading {
     color: white;
     font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
@@ -347,10 +352,7 @@ background-color: #23395c;
     text-align: center;
 }
 
-    .thumbnailCaptionHeading:hover,
-    .thumbnailCaptionHeading:hover:active {
-        color: #337ab7
-    }
+   
 
 #collapsibleProjectsDiv img {
     max-width: 100%;
