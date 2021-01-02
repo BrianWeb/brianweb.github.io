@@ -3,6 +3,7 @@ angular.module('router', ['ngRoute'])
 .config(function ($routeProvider)
 { //Angular dependancy injection 
     $routeProvider
+        .when('/sidsplumbing', { templateUrl: 'accordionSections/partials/projects/sidsplumbing.html' })
         .when('/almax', { templateUrl: 'accordionSections/partials/projects/almax.html' })
         .when('/woodconcepts', { templateUrl: 'accordionSections/partials/projects/woodconcepts.html' })
         .when('/metro', { templateUrl: 'accordionSections/partials/projects/metro.html' })
